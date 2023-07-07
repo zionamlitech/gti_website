@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>first project</title>
+    <link rel="stylesheet" type="" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css">
+   
+    <script class='main.js'>
+   function home(){
+        document.getElementById("container").innerHTML = '';
+    }
+    
+</script>
+</head>
+<style>
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+   
+}
+body{
+    font-family: "epilogue",sans-serif,arial;
+    background-color:#FAF8F6;
+    display: grid;
+     width: 1000px;
+     height:100vh;
+   
+    
+}
+
+
+main{
+       
+       width:1280px;
+        background-image:linear-gradient(rgb(4,9,30,0.7),rgb(4,9,30,0.7)),url(1mg4.jpg);
+        background-repeat:no-repeat;
+         background-size:cover;
+
+        
+    }
+    
+h1{
+    position:absolute;
+    left:50%;
+    top:50%;
+    color:white ;
+    font-size:30px;
+    
+    transform:translate(-50%,-50%);
+}
+h1:hover{
+    
+    color:red;
+}
+nav{
+   margin-top:20px;
+    text-align:center;
+    display:flex;
+    justify:content:space-between;
+    width:1230px;
+    height:100px;
+    background: indigo;
+    box-shadow: 5px solid #ccc rgb(0,0,0,0.6);
+    
+}
+
+.logo{
+    margin-left:16px;
+}
+.nav-links{
+    margin-right:10px;
+   flex:1;
+   text-align:right; 
+   text-decoration:none;
+   margin-top: 40px;
+   
+   
+}
+.nav-links ul li a{
+    color:white;
+    font-size:20px;
+    font-weight:bold;
+    text-decoration:none;
+    font-style: 'Epilogue';
+    margin-top: 40px;
+
+   
+}
+.nav-links ul li{
+  
+    display:inline-block;
+    justify-content:space-between;
+    text-decoration: none;
+    list-style:none;
+   text-align:right;
+
+     
+}
+.nav-links ul li.first, .second, .third{
+    margin-right:6px;
+}
+.nav-links ul li::after{
+    content:"";
+    width:100%;
+    height:2px;
+    background: #;
+    display:block;
+    transition:0.5s;
+}
+.nav-links ul li:hover{
+    background: #666;
+}
+.nav-links ul li:hover::after{
+    background: red;
+
+}
+
+
+section{
+    text-align:center;
+
+}
+section p{
+    
+    position:relative;
+    margin:50px;
+    top:330px;
+    font-weight:bold;
+    color:white;
+    font-size:30px;
+    font-family:sans-serif;
+
+}
+section p:hover{
+    color: #fff;
+}
+h6{
+    font-size:20px;
+margin-left:25px;
+    color:blue;
+}
+.std{
+   
+      margin-top:3%;
+}
+
+.center{
+   
+    width:150px;
+    height:70px;
+    border-radius:8px;
+    align-items:center;
+    margin-top:570px;
+    margin-left:500px;
+    
+    padding:20px;
+    text-align:center;
+    
+    
+
+    border:1px solid #fff;
+   
+    background:#f44336;
+    
+}
+.center a{
+    padding:0 2px;
+  
+    padding:2px 5px;
+    color:#fff;
+    text-decoration:none;
+    font-size:10px;
+    margin-left:-10px;
+    
+    font-family:arial;
+}
+.center:hover{
+background:#000;
+color: orange;
+
+}
+
+.center:hover a{
+   color: orange;
+   font-size:10px;
+   font-family:sans-serif; 
+}
+footer{
+   
+    width:1250px;
+    height:220px;
+    background:#600;
+    border-radius:20px;
+    margin-top:650px;
+}
+.ending{
+    display:flex;
+}
+.media{
+    display:flex;
+    justify:content:space-between;
+    margin:20px 60px;
+    height:16px;
+}
+.facebook,.twitter,.instagram{
+    margin-left:15px;
+}
+.facebook:hover,.twitter:hover,.instagram:hover{
+    background:#fff;
+    width:20px;
+   
+}
+.info{
+    margin:20px auto;
+    width:230px;
+    height:100px;
+    text-align:center;
+
+}
+.info p{
+    color :#fff;
+    margin:5px auto;
+}
+@media screen and (max-width:375px){
+    body{
+        box-sizing:border-box;
+         width:100vh;
+        margin:0;
+        padding:0;
+       
+    
+
+    }
+    main{
+        width:100%;
+        height:100%;
+        margin:0;
+        padding:0;
+        background-image:linear-gradient(rgb(4,9,30,0.7),rgb(4,9,30,0.7)),url(image2.jpg);
+        background-repeat:no-repeat;
+        background-size:cover;
+    }
+    
+
+  .nav-links{
+   
+    display:block;
+    background:#f44336;
+    width:50px;
+    height:600px;
+    z-index:2;
+    text-align:center;
+   
+   
+    
+  }
+  .nav-links ul li{
+  
+    display:block;
+    justify-content:space-between;
+    text-decoration: none;
+    list-style:none;
+    text-align:left;
+    left:0;
+     
+}
+.nav-links ul li a{
+   left:0;
+
+}
+ 
+}
+
+</style>
+
+    
+
+<body>
+<main>
+<!--<img class='big' src="img6.jpg" alt="">-->
+<nav>
+<div class=logo>
+   <img src="newlogo.PNG" alt="">
+</div>
+<div class="nav-links">
+    <i class="fa fa-times" ></i>
+    
+
+    <ul>
+        
+
+        <li class="first"><a href="home.html" >Home</a> </li>
+        <li class='second'><a href="courses.html">Courses</a> </li>
+        <li class='third'><a href="contact.html">Contact</a> </li>
+    </ul>
+
+    </div>
+    <i class="fa fa-bars" ></i>
+
+</nav>
+
+
+<section>
+    <h6></h6>
+    <h1>GYEDU TECHNICAL/VOCATIONAL INSTITUTE</h1>
+    <p>Making You Employable</p>
+    <p>Home of skills learning center </p>
+    <div class="center">
+    <a href="contact .html">Visit Us To Know More</a>
+    <!--<img  class ='std'src="ele (3).jpg" alt="">-->
+</div>
+</section>
+
+
+<footer>
+    <div class="ending">
+            <div class='media'>
+                
+           
+            <div class='facebook'>
+             <img src="icon-facebook.svg" alt="">
+             </div>
+             <div class='twitter'>
+             <img src="icon-twitter.svg" alt="">
+             </div>
+             <div class ='instagram'>
+             <img src="icon-instagram.svg" alt="">
+             
+             </div>
+              </div>
+             <div class='info'>
+             <p>Gyedu Technical Institute</p>
+             <p>P.O. Box 28</p>
+             <p>Gyedu, Asutifi North- Ahafo Region</p>
+             <p>Tel:+233</p>
+             </div>
+        </div>
+</footer>
+
+</main>
+</body>
+</html>
