@@ -1,0 +1,545 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title></title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="css/style.css" rel="stylesheet">
+        <style>
+        .container{
+            padding:0;
+            margin:0;
+            align-items:center;
+            align-content:center;
+        }
+        .sdt-program{
+            display:flex;
+            top:2;
+    position:absolute;
+    width:90%;
+    left:15px;
+    height: 480px;
+    margin-left:2%;
+    
+    margin-bottom:5px;
+   
+    border-radius:8px;
+    border:5px solid #fff;
+    box-shadow:2px 3px 5px rgb(159,158,158,158);
+    align-content:center;
+      
+    align-items:center;
+ 
+
+        }
+        .sdt-program .img-one,.sdt-program .img-two,.sdt-program .img-three,.sdt-program .img-four{
+   position:absolute;
+   border-radius:70%;
+    width:100%;
+    height:90%;
+    margin-top:-221px;
+    left:0;
+    
+}
+.sdt-program .img-one img,.sdt-program .img-two img ,.sdt-program .img-three img,.sdt-program .img-four img{
+   position:absolute;
+  
+    width:100%;
+    height:90%;
+    
+}
+
+.sdt-program.img-one{
+    animation: slide1 12s linear infinite;
+}
+.sdt-program.img-two{
+    animation: slide2 12s linear infinite;
+}
+.sdt-program.img-three{
+    animation: slide3 12s linear infinite;
+}
+.sdt-program.img-four{
+    animation: slide3 12s linear infinite;
+}
+
+@keyframes slide1{
+    0%{
+        visibility:visible;
+        
+    }
+    25%{
+         visibility:hidden;
+       
+     }    
+       
+    50%{
+         visibility:hidden;
+        
+    }
+    75%{
+         visibility:hidden;
+       
+    }
+    
+    100%{
+         visibility:visible;
+       
+    }
+   
+
+}
+@keyframes slide2{
+    0%{
+        visibility:hidden;
+        
+    }
+    25%{
+         visibility:hidden;
+      
+     }    
+        
+    50%{
+         visibility:visible;
+        
+    }
+    75%{
+         visibility:hidden;
+        
+    }
+   
+    100%{
+         visibility:hidden;
+        
+    }
+   
+
+}
+@keyframes slide3{
+    0%{
+        visibility:hidden;
+        
+    }
+    25%{
+         visibility:hidden;
+       
+     }    
+       
+    50%{
+         visibility:hidden;
+        
+    }
+    75%{
+         visibility:visible;
+       
+    }
+    
+    100%{
+         visibility:hidden;
+        
+    }
+   
+
+}
+
+@keyframes slide4{
+    0%{
+        visibility:hidden;
+        
+    }
+    25%{
+         visibility:hidden;
+       
+     }    
+       
+    50%{
+         visibility:hidden;
+       
+    }
+    75%{
+         visibility:hidden;
+       
+    }
+    
+    100%{
+         visibility:visible;
+       
+    }
+   
+
+}
+
+    .sdt-entertainment{
+    position:absolute;
+    margin:2px auto;
+    width:90%;
+    left:15px;
+    height: 480px;
+    margin-left:2%;
+    margin-top:120%;
+    border-radius:8px;
+    border:5px solid #fff;
+    box-shadow:2px 3px 5px rgb(159,158,158,158);
+    align-content:center;
+    transform:transition(-50%, -50%);
+    align-items:center;
+    opacity:1;
+    margin-bottom:5px;
+    }
+    .sdt-entertainment .img-one,.sdt-entertainment.img-two,.sdt-entertainment.img-three,.sdt-entertainment.img-four{
+   position:absolute;
+   border-radius:70%;
+    width:100%;
+    height:90%;
+}
+
+.sdt-entertainment .img-one{
+    animation: slide1 12s linear infinite;
+}
+.sdt-entertainment .img-two{
+    animation: slide2 12s linear infinite;
+}
+.sdt-entertainment .img-three{
+    animation: slide3 12s linear infinite;
+}
+.sdt-entertainment .img-four{
+    animation: slide3 12s linear infinite;
+}
+
+@keyframes slide1{
+    0%{
+        visibility:visible;
+        
+    }
+    25%{
+         visibility:hidden;
+       
+     }    
+       
+    50%{
+         visibility:hidden;
+        
+    }
+    75%{
+         visibility:hidden;
+       
+    }
+    
+    100%{
+         visibility:visible;
+       
+    }
+   
+
+}
+@keyframes slide2{
+    0%{
+        visibility:hidden;
+        
+    }
+    25%{
+         visibility:hidden;
+      
+     }    
+        
+    50%{
+         visibility:visible;
+        
+    }
+    75%{
+         visibility:hidden;
+        
+    }
+   
+    100%{
+         visibility:hidden;
+        
+    }
+   
+
+}
+@keyframes slide3{
+    0%{
+        visibility:hidden;
+        
+    }
+    25%{
+         visibility:hidden;
+       
+     }    
+       
+    50%{
+         visibility:hidden;
+        
+    }
+    75%{
+         visibility:visible;
+       
+    }
+    
+    100%{
+         visibility:hidden;
+        
+    }
+   
+
+}
+
+@keyframes slide4{
+    0%{
+        visibility:hidden;
+        
+    }
+    25%{
+         visibility:hidden;
+       
+     }    
+       
+    50%{
+         visibility:hidden;
+       
+    }
+    75%{
+         visibility:hidden;
+       
+    }
+    
+    100%{
+         visibility:visible;
+       
+    }
+   
+
+}
+
+    .sdt-news{
+        display:flex;
+    position:absolute;
+    margin:2px auto;
+    width:90%;
+    left:15px;
+    height: 480px;
+    margin-left:2%;
+    margin-top:180%;
+   
+    border-radius:8px;
+    border:5px solid #fff;
+    box-shadow:2px 3px 5px rgb(159,158,158,158);
+    align-content:center;
+       transform:transition(-50%, -50%);
+    align-items:center;
+    opacity:1;
+
+        }
+        .sdt-news .img-one,.sdt-news.img-two,.sdt-news.img-three,.sdt-news.img-four{
+   position:absolute;
+   border-radius:70%;
+    width:100%;
+    height:90%;
+}
+
+.sdt-news.img-one{
+    animation: slide1 12s linear infinite;
+}
+.sdt-news.img-two{
+    animation: slide2 12s linear infinite;
+}
+.sdt-news.img-three{
+    animation: slide3 12s linear infinite;
+}
+.sdt-news.img-four{
+    animation: slide3 12s linear infinite;
+}
+
+@keyframes slide1{
+    0%{
+        visibility:visible;
+        
+    }
+    25%{
+         visibility:hidden;
+       
+     }    
+       
+    50%{
+         visibility:hidden;
+        
+    }
+    75%{
+         visibility:hidden;
+       
+    }
+    
+    100%{
+         visibility:visible;
+       
+    }
+   
+
+}
+@keyframes slide2{
+    0%{
+        visibility:hidden;
+        
+    }
+    25%{
+         visibility:hidden;
+      
+     }    
+        
+    50%{
+         visibility:visible;
+        
+    }
+    75%{
+         visibility:hidden;
+        
+    }
+   
+    100%{
+         visibility:hidden;
+        
+    }
+   
+
+}
+@keyframes slide3{
+    0%{
+        visibility:hidden;
+        
+    }
+    25%{
+         visibility:hidden;
+       
+     }    
+       
+    50%{
+         visibility:hidden;
+        
+    }
+    75%{
+         visibility:visible;
+       
+    }
+    
+    100%{
+         visibility:hidden;
+        
+    }
+   
+
+}
+
+@keyframes slide4{
+    0%{
+        visibility:hidden;
+        
+    }
+    25%{
+         visibility:hidden;
+       
+     }    
+       
+    50%{
+         visibility:hidden;
+       
+    }
+    75%{
+         visibility:hidden;
+       
+    }
+    
+    100%{
+         visibility:visible;
+       
+    }
+   
+
+}
+
+        </style>
+    </head>
+    <body>
+    
+    
+    <div class='container'>
+     <h1>STUDENTS LIFE</h1>
+    <div class='sdt-program'>
+        programs
+        <div class='img-home'>
+   
+    <div class='img-one'>
+    <h3>THE FEMALE VOLLEY TEAM</h3>
+    <span></span>
+    <img src="sports (1).jpg" alt="" width='100%' height='100%'>
+    </div>
+    <div class='img-two'>
+     <h3>THE FEMALE SOCCER TEAM</h3>
+    <span></span>
+    <img src="sports (2).jpg" alt=""width='100%' height='100%'>
+    </div>
+     <div class='img-three'>
+     <img src="sports (3).jpg" alt="" width='100%' height='100%'>
+     </div>
+       <div class='img-four'> 
+        <h3>THE MALE SOCCER TEAM</h3>
+    <span></span>
+       <img src="sports (3).jpg" alt="" width='100%' height='100%'>
+       </div>
+    </div>
+    
+     <div class='sdt-entertainment'>
+        <h3>entertainment</h3>
+        <div class='img-home'>
+   
+    <div class='img-one'>
+    <h3></h3>
+    <span></span>
+    <img src="caddet.jpg" alt="" width='100%' height='100%'>
+    </div>
+    <div class='img-two'>
+     <h3></h3>
+    <span></span>
+    <img src="caddet1.jpg" alt=""width='100%' height='100%'>
+    </div>
+     <div class='img-three'>
+     <img src="ca.jpg" alt="" width='100%' height='100%'>
+     </div>
+       <div class='img-four'> 
+        <h3></h3>
+    <span></span>
+       <img src="caddet1.jpg" alt="" width='100%' height='100%'>
+       </div>
+    </div>
+     <div class='sdt-news'>
+       <h3></h3>
+       <div class='img-home'>
+   
+    <div class='img-one'>
+    <h3></h3>
+    <span></span>
+    <video src="entertaiment (1).mp4"  width='100%' height='100%'>
+    </div>
+    <div class='img-two'>
+     <h3></h3>
+    <span></span>
+    <img src="entertaiment (2).mp4" alt=""width='100%' height='100%'>
+    </div>
+     <div class='img-three'>
+     <img src="entertaiment (3).mp4" alt="" width='100%' height='100%'>
+     </div>
+       <div class='img-four'> 
+        <h3></h3>
+    <span></span>
+       <img src="entertaiment (3).mp4" alt="" width='100%' height='100%'>
+       </div>
+    </div>
+    
+   
+    
+    
+   
+        students body page
+       
+    </div>
+    </body>
+</html>

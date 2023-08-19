@@ -5,19 +5,118 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link href="css/style.css" rel="stylesheet">
-        <h1>WELCOME TO GYEDU TECHNICAL INSTITUTE</h1>
+        
         <style>
         body{
-            background-image:url(image2.jpg);
+            padding:0;
+            margin:0;
+            box-sizing:border-box;
+           
+            
         }
+
         .container{
             margin:20px auto;
         }
+        .header{
+            width:100%;
+            height:80px;
+            background:#000065;
+        }
+       
+        .header h1{
+            margin:10px auto;
+            color:#fff;
+             text-align:center;
+             font-size:32px;
+             font-family: sans-serif;
+        }
+        .logo{
+            display:flex;
+            justify-content:space-between;
+             width:100%;
+            height:30%;
+            border:5px solid #fff;
+            box-shadow:2px 3px 5px rgb(159,158,158,158);
+            margin:0 auto;
+        }
+        .logo img{
+            width:30%;
+            margin-left: 320px;
+        }
+        .logo p{
+            font-size: 32px;
+            color:#000065;
+        }
+        .outer-line{
+            width:100%;
+            height:0.2px;
+            margin-top:0;
+            background:red;
+             border:5px solid red;
+            box-shadow:2px 3px 5px rgb(159,158,158,158);
+        }
+        .history{
+            width:80%;
+            height:40%;
+            border:5px solid #fff;
+            box-shadow:2px 3px 5px rgb(159,158,158,158);
+            margin:0 auto;
+
+        }
+        .history-btn{
+            width:80%;
+            height:0.2px;
+            margin:0px auto;
+            background:red;
+             border:5px solid navy;
+            box-shadow:2px 3px 5px rgb(159,158,158,158);
+
+
+        }
+        .students-information{
+            position:absolute;
+             width:80%;
+              height:440px;
+           
+            margin-left:120px ;
+            background:#fff;
+             border:5px solid #fff;
+            box-shadow:2px 3px 5px rgb(159,158,158,158);
+
+        }
+       .students-portal{
+            margin-top: 100px ;
+            margin-left:40%;
+            position:relative;
+            width:10%;
+            height:40px;
+            background:red;
+            border-radius:8px;
+            border:5px solid red;
+            box-shadow:2px 3px 5px rgb(159,158,158,158);
+            
+        }
+        .students-portal a{
+            text-decoration:none;
+            color:navy;
+            margin:2px auto;
+        }
+        .students-portal a:hover{
+            color:#fff;
+        }
+        .students-portal select{
+            background:linear-gradient(white,aqua);
+        }
         input{
-            color:#000;
+            position:absolute;
+            color:#000065;
             width:90px;
             height:46px;
-            background: #999;
+            background:red;
+            margin-top:580px;
+            border-radius:8px;
+            margin-left:20px;
         }
         table{
             width:230px;
@@ -34,15 +133,122 @@
         tr:nth-child(even) {
   background-color: #dddddd;
 }
+footer{
+   
+    width:1250px;
+    height:320px;
+    background:#000065;
+    border-radius:20px;
+    margin-top:650px;
+}
+.ending{
+    display:flex;
+}
+.media{
+    display:flex;
+    justify:content:space-between;
+    margin:20px 60px;
+    height:16px;
+}
+.facebook,.twitter,.instagram{
+    margin-left:15px;
+    
+}
+.facebook:hover,.twitter:hover,.instagram:hover{
+    background:#fff;
+    width:20px;
+   
+}
+.info{
+    margin:20px auto;
+    width:230px;
+    height:100px;
+    text-align:center;
+
+}
+.info p{
+    color :#fff;
+    margin:5px auto;
+}
+span:first-of-type{
+    color:red;
+}
+span{
+    
+    color:red;
+}
+.quick-link{
+    display:block;
+    width:40%;
+    height:30%;
+    margin-left:30%;
+}
+.quick-link h3{
+    color:#fff;
+    font-style:'epilogue';
+    font-weight: bold;
+    font-size:20px;
+
+}
+.quick-link ul li{
+    list-style:none;
+}
+.quick-link a{
+    text-decoration:none;
+    color:#fff;
+    font-size:18px;
+    
+}
+.quick-link a:hover{
+    color:red;
+}
+
         </style>
     </head>
     <body id='container'>
-    <div class='history'>
-    <h1>we are been reminded of an ongoing Exams</h1>
-    
-    <p>All are cordially invited</p>
-        
+    <div class='header'>
+        <h1><span>WELCOME</span> TO GYEDU TECHNICAL <span>INSTITUTE</span></h1>
+                
+            </div>
+            <div class='logo'>
+                <img src="LOGO_G.png" alt="">
+                <div class='edge'>
+                <p> Making You Employable </p>  
+                </div>
+            </div>
+            <div class='outer-line'> </div>    
     </div>
+  
+    <div class='history'>
+        <h1>OUR PROGRAMS</h1>
+    
+        <p>We have special programs at the school for students. We run most of the Technical courses considered as electives together with the core subjects such as Maths , Science, English,Entrepreneur, I.C.T and Social studies  </p>
+        <p>students can generally access their result form this platform by accessing the button below</p>   
+        </div>
+        <div class='history-btn'> </div>
+        <div class='students-information'>
+            <p>THE ADMINISTRATION</p>
+            <hr>
+            <p>THE PRINCIPAL</p>
+            <hr style='width:80%; height: .1px; color:navy'>
+             <p>THE ASSISTANT HEADMASTER ACADEMICS</p>
+            <hr style='width:80%; height: .1px; color:red'>
+             <p>THE ASSISTANT HEAD ADMINISTRATION</p>
+           <hr style='width:80%; height: .1px; color:navy'>
+             <p>THE ACCOUNTANT</p>
+            <hr style='width:80%; height: .1px; color:red'>
+            <div class='students-portal'>
+            <select >
+             <option value="0">select</option>
+               <option value=""> <a href="students.html">students</a> </option>
+                <option value=""><a href="teachers.html">staff</a></option> 
+            </select>
+            <a href="mail.html">Login</a>
+                
+        </div>
+    </div>
+        
+   <!--
     <table>
     <tr>
         <th> Events</th>
@@ -65,8 +271,48 @@
         <td>14th June, 2023</td>
         </tr>
     </table>
+    -->
+    <br>
     <a href="index.html">
     <input type="submit" name="go back home" value="home>>" >
     </a>
+    <p style='margin-top:50%;margin-left:50%'>You can visit Us <a href='https://sites.google.com/view/gyedutechnicalinstitute/home'>here</a></p>
+    <footer>
+    <div class="ending">
+            <div class='media'>
+                
+           
+            <div class='facebook'>
+             <img src="icon-facebook.svg" alt="">
+             </div>
+             <div class='twitter'>
+             <img src="icon-twitter.svg" alt="">
+             </div>
+             <div class ='instagram'>
+             <img src="icon-instagram.svg" alt="">
+             
+             </div>
+              </div>
+              <div class='quick-link'>
+              <h3>quick link</h3>
+              <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="courses.html">courses</a></li>
+                 <li><a href="contact.html">Contact</a></li>
+                  <li><a href="mail.html">Email:www.gti.edu.gh <br> gti@gmail.com</a></li>
+                   <li><a href="about.html">About Us</a></li>
+                    <li><a href="events.html">News & Events</a></li>
+
+              </ul>
+                
+              </div>
+             <div class='info'>
+             <p>Gyedu Technical Institute</p>
+             <p>P.O. Box 28</p>
+             <p>Gyedu, Asutifi North- Ahafo Region</p>
+             <p>Tel:+233</p>
+             </div>
+        </div>
+</footer>
     </body>
 </html>

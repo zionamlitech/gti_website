@@ -5,8 +5,192 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link href="css/style.css" rel="stylesheet">
+        <style>
+        body{
+            padding:0;
+            margin:0;
+            font-family:sans-serif;
+        }
+        a{
+            text-decoration:none;
+        }
+        .wrapper{
+            margin-left:15px;
+            width:100%;
+            height:100vh;
+            background: #fff;
+            text-align:left;
+        }
+           .std-project{
+            display:flex;
+            width:80%;
+            height:320px;
+            border-radius:8px;
+            border:5px solid #fff;
+            box-shadow:2px 3px 5px rgb(159,158,158,158);
+            margin:0 auto;
+        }
+        .std-project .img-one{
+        position:absolute;
+        margin:1px auto;
+    }
+    .std-project .img-two{
+        position:absolute;
+         margin:15px auto;
+    }
+    .std-project .img-three{
+        position:absolute;
+         margin:15px auto;
+    }
+    .std-project .img-four{
+        position:absolute;
+         margin:15px auto;
+    }
+        .std-project .img-one,.std-project.img-two, .std-project.img-three,.std-project.img-four{
+        position:absolute;
+    }
+   .img-one,.img-two,.img-three,.img-four{
+    margin-top:0%;
+    margin-left:0%;
+  
+   width:650px;
+    height:95%;
+}
+
+.img-one{
+    animation: slide1 12s linear infinite;
+}
+.img-two{
+    animation: slide2 12s linear infinite;
+}
+.img-three{
+    animation: slide3 12s linear infinite;
+}
+.img-four{
+    animation: slide3 12s linear infinite;
+}
+
+.instructors-profile{
+     display:flex;
+            width:80%;
+            height:320px;
+            border-radius:8px;
+            border:5px solid #fff;
+            box-shadow:2px 3px 5px rgb(159,158,158,158);
+            margin:0 auto;
+
+}
+@keyframes slide1{
+    0%{
+        visibility:visible;
+        
+    }
+    25%{
+         visibility:hidden;
+       
+     }    
+       
+    50%{
+         visibility:hidden;
+        
+    }
+    75%{
+         visibility:hidden;
+       
+    }
+    
+    100%{
+         visibility:visible;
+       
+    }
+   
+
+}
+@keyframes slide2{
+    0%{
+        visibility:hidden;
+        
+    }
+    25%{
+         visibility:hidden;
+      
+     }    
+        
+    50%{
+         visibility:visible;
+        
+    }
+    75%{
+         visibility:hidden;
+        
+    }
+   
+    100%{
+         visibility:hidden;
+        
+    }
+   
+
+}
+@keyframes slide3{
+    0%{
+        visibility:hidden;
+        
+    }
+    25%{
+         visibility:visible;
+       
+     }    
+       
+    50%{
+         visibility:hidden;
+        
+    }
+    75%{
+         visibility:hidden;
+       
+    }
+    
+    100%{
+         visibility:hidden;
+        
+    }
+   
+
+}
+
+@keyframes slide4{
+    0%{
+        visibility:hidden;
+        
+    }
+    25%{
+         visibility:hidden;
+       
+     }    
+       
+    50%{
+         visibility:hidden;
+       
+    }
+    75%{
+         visibility:hidden;
+       
+    }
+    
+    100%{
+         visibility:visible;
+       
+    }
+   
+
+}
+        </style>
     </head>
     <body>
+    <div class='wrapper'>
+        
+    
     <h1>WELCOME TO HOME OF FASHION AND GARMENT DESIGN</h1>
     <p>We give you the best cloth</p>
     <h5>what we offer</h5>
@@ -15,6 +199,36 @@
          <li><a href="fashion.html">Garment Construction </a></li>
           <li><a href="fashion.hml">practical sowing </a></li>
     </ol>
+    
+        <div class='std-project'>
+   <div class='img-one'>
+     <img src="FASH.jpg" alt="" width='155%' height='50%'>
+   </div>
+   <div class='img-two'>
+     <img src="fash-img1 (4).jpg"  width='155%' height='50%' >
+   </div>
+   <div class='img-three'>
+     <img src="fash-img1 (5).jpg"  width='155%' height='50%' >
+   </div>
+   <div class='img-three'>
+     <img src="fash-img1 (2).jpg"  width='155%' height='50%' >
+   </div>
+   
+    
+   </div>
+   <div class='instructors-profile'>
+   <h3>INSTRUCTORS PROFILE</h3>
+    <div class='instructor-1'>
+        <img src="" alt="">
+    </div>
+    <div class='instructor-2'>
+        <img src="" alt="">
+    </div>
+   </div>
+   <a href="home.html">
+    <input name="home" id="" class="btn btn-primary" type="button" value="back >>">
+    </a>
+    </div>
     
     </body>
 </html>

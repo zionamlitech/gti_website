@@ -5,18 +5,253 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link href="css/style.css" rel="stylesheet">
+        <style>
+        body{
+            margin:0;
+            padding:0;
+        }
+        .wrapper{
+            width:80%;
+            background:#fff;
+        }
+        input{
+            width:80px;
+        }
+        .std-project{
+            display:flex;
+            width:80%;
+            height:320px;
+            border-radius:8px;
+            border:5px solid #fff;
+            box-shadow:2px 3px 5px rgb(159,158,158,158);
+            margin:0 auto;
+        }
+        .std-project .img-one{
+        position:absolute;
+        margin:1px auto;
+    }
+    .std-project .img-two{
+        position:absolute;
+         margin:15px auto;
+    }
+    .std-project .img-three{
+        position:absolute;
+         margin:15px auto;
+    }
+    .std-project .img-four{
+        position:absolute;
+         margin:15px auto;
+    }
+        .std-project .img-one,.std-project.img-two, .std-project.img-three,.std-project.img-four{
+        position:absolute;
+    }
+   .img-one,.img-two,.img-three,.img-four{
+    position:absolute;
+    margin-top:0%;
+    margin-left:0%;
+  
+   width:650px;
+    height:95%;
+}
+
+.img-one{
+    animation: slide1 12s linear infinite;
+}
+.img-two{
+    animation: slide2 12s linear infinite;
+}
+.img-three{
+    animation: slide3 12s linear infinite;
+}
+.img-four{
+    animation: slide3 12s linear infinite;
+}
+
+.instructors-profile{
+     display:flex;
+            width:80%;
+            height:320px;
+            border-radius:8px;
+            border:5px solid #fff;
+            box-shadow:2px 3px 5px rgb(159,158,158,158);
+            margin:0 auto;
+            margin-top:50px;
+
+}
+.text-center{
+    margin-left:50%;
+}
+
+.instructor-1{
+    width:40%;
+            height:50%;
+            border-radius:8px;
+            border:5px solid #ccc;
+            box-shadow:2px 3px 5px rgb(159,158,158,158);
+            margin:30px auto;
+
+            margin-left:0;
+}
+.instructor-2{
+    width:40%;
+            height:50%;
+            border-radius:8px;
+            border:5px solid #ddd;
+            box-shadow:2px 3px 5px rgb(159,158,158,158);
+            margin:30px auto;
+
+}
+@keyframes slide1{
+    0%{
+        visibility:visible;
+        
+    }
+    25%{
+         visibility:hidden;
+       
+     }    
+       
+    50%{
+         visibility:hidden;
+        
+    }
+    75%{
+         visibility:hidden;
+       
+    }
+    
+    100%{
+         visibility:visible;
+       
+    }
+   
+
+}
+@keyframes slide2{
+    0%{
+        visibility:hidden;
+        
+    }
+    25%{
+         visibility:hidden;
+      
+     }    
+        
+    50%{
+         visibility:visible;
+        
+    }
+    75%{
+         visibility:hidden;
+        
+    }
+   
+    100%{
+         visibility:hidden;
+        
+    }
+   
+
+}
+@keyframes slide3{
+    0%{
+        visibility:hidden;
+        
+    }
+    25%{
+         visibility:visible;
+       
+     }    
+       
+    50%{
+         visibility:hidden;
+        
+    }
+    75%{
+         visibility:hidden;
+       
+    }
+    
+    100%{
+         visibility:hidden;
+        
+    }
+   
+
+}
+
+@keyframes slide4{
+    0%{
+        visibility:hidden;
+        
+    }
+    25%{
+         visibility:hidden;
+       
+     }    
+       
+    50%{
+         visibility:hidden;
+       
+    }
+    75%{
+         visibility:hidden;
+       
+    }
+    
+    100%{
+         visibility:visible;
+       
+    }
+   
+
+}
+        </style>
     </head>
     <body>
+    <div class='wrapper'>
+        
+    
     <h1>WELCOME TO HOME OF WELDING AND GAS FABRICATION</h1>
-    <p>we serve youth with quality handy works</p>
+    <p>we serve youth with quality metal fabrications </p>
     <h5>what we offer</h5>
     <ol>
         <li><a href="#">practical welding </a></li>
          <li><a href="">Construction practice </a></li>
           <li><a href="">and many more </a></li>
     </ol>
-    <p>Welding is a fabrication process whereby two or more parts are fused together by means of heat, pressure or both forming a join as the parts cool.</p>
-    <input name="home" id="" class="btn btn-primary" type="button" value="">
+    <p>Welding is a fabrication process whereby two or more parts are fused together by means of heat, pr
+    essure or both forming a join as the parts cool.</p>
+   <div class='std-project'>
+   <div class='img-one'>
+     <img src="weld (6).jpg" alt="" width='100%' height='50%'>
+   </div>
+   <div class='img-two'>
+     <img src="weld (3).jpg"  width='100%' height='50%' >
+   </div>
+   <div class='img-three'>
+     <img src="weld (7).jpg"  width='100%' height='50%' >
+   </div>
+   <div class='img-three'>
+     <img src="weld (11).jpg"  width='100%' height='50%' >
+   </div>
+   
     
+   </div>
+  <section>
+     <h3 class='text-center'>INSTRUCTORS PROFILE</h3>
+    <div class='instructors-profile'>
+    <div class='instructor-1'>
+        <img src="ku.jpg" alt=""  width='100%' height='100%'>
+    </div>
+    <div class='instructor-2'  width='100%' height='100%'>
+        
+    </div>
+        
+    </div>
+  </section>
+   
+    <input name="home" id="" class="btn btn-primary" type="button" value="back >>">
+    </div>
     </body>
 </html>

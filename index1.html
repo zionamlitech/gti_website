@@ -1,0 +1,623 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title></title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="css/style.css" rel="stylesheet">
+             <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.4/dist/jquery.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+   <script>
+    function myFunction() {
+  var dots = document.getElementById("dots");
+  var moreText = document.getElementById("more");
+  var btnText = document.getElementById("myBtn");
+
+  if (dots.style.display === "none") {
+    dots.style.display = "inline";
+    btnText.innerHTML = "Read more";
+    moreText.style.display = "none";
+  } else {
+    dots.style.display = "none";
+    btnText.innerHTML = "Read less";
+    moreText.style.display = "inline";
+  }
+}
+
+//the slides of studenets
+var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}    
+  x[myIndex-1].style.display = "block";  
+  setTimeout(carousel, 9000);    
+}
+   </script>
+   
+   <style>
+   *{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+   
+}
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  
+  
+}
+.container{
+    width:100%;
+  
+}
+.topnav {
+  overflow: hidden;
+  background-color: #444;
+}
+
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: #04AA6D;
+  color: white;
+}
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 20%;
+}
+h{
+width:80%;
+height:580px;
+background:#fff;
+
+display:block;
+align-items:center;
+margin-top:80px;
+margin-left:20px;
+border-radius:2%;
+}
+#right-one{
+	display:flex;
+
+	width:100%;
+	height:650px;
+	border-radius:8px;
+	border:2px solid #fff;
+	background:#fff;
+	box-shadow: 12px 14px 17px  rgb(158,158,158);
+	align-items:center;
+	text-align:center;
+	align-content:center;
+	margin:5px auto;
+	
+	background-repeat:no-repeat;
+	align-content:center;
+       transform:transition(-50%, -50%);
+    align-items:center;
+	margin-left:0;
+}
+#right-one#img-one{
+    position:absolute;
+}
+
+#img-one {
+	width:100%;
+	height:100%;
+	background:url(front.jpg);
+	background-size:80% ;
+	animation:slide 40s linear infinite;
+	background-repeat:no-repeat;
+
+}
+
+@keyframes slide{
+	0%{
+		background:url(front.jpg);
+		width:100%;
+		height:100%;
+		background-repeat:no-repeat;
+	}
+	25%{
+		background:url(BLOCK2.jpg);
+		background-repeat:no-repeat;
+		width:100%;
+		height:100%;
+
+	}
+	50%{
+		background:url(image2.jpg);
+		width:100%;
+		height:100%;
+		background-repeat:no-repeat;
+
+	}
+	75%{
+		background:url(image4.jpeg);
+		width:100%;
+		height:100%;
+		background-repeat:no-repeat;
+
+	}
+	100%{
+		background:url(front.jpg);
+		width:100%;
+		height:100%;
+	}
+	
+}
+
+#round-img{
+    display:flex;
+  position:absolute;
+     width:100%;
+    height:60%;
+    background:#000065;
+    border:5px solid #fff;
+    box-shadow:2px 3px 5px rgb(159,158,158,158);
+   
+     transform:transition(-50%, -50%);
+   
+    text-align:right;
+    overflow:hidden;
+    align-content:center;
+
+}
+.round-img img{
+    position:absolute;
+
+}
+
+
+ .round-img.round-one,.round-img.round-two,.round-img.round-three,.round-img.round-four{
+   position:absolute;
+   
+    width:100%;
+    height:100%;
+}
+
+.round-one{
+    animation: slide1 12s linear infinite;
+}
+.round-two{
+    animation: slide2 12s linear infinite;
+}
+.round-three{
+    animation: slide3 12s linear infinite;
+}
+.round-four{
+    animation: slide3 12s linear infinite;
+}
+.prefect{
+  
+   width:100%;
+   height:60%;
+
+}
+.prefects.video{
+    
+    width:100%;
+    height:40%;
+}
+
+@keyframes slide1{
+    0%{
+        visibility:visible;
+        
+    }
+    25%{
+         visibility:hidden;
+       
+     }    
+       
+    50%{
+         visibility:hidden;
+        
+    }
+    75%{
+         visibility:hidden;
+       
+    }
+    
+    100%{
+         visibility:visible;
+       
+    }
+   
+
+}
+@keyframes slide2{
+    0%{
+        visibility:hidden;
+        
+    }
+    25%{
+         visibility:hidden;
+      
+     }    
+        
+    50%{
+         visibility:visible;
+        
+    }
+    75%{
+         visibility:hidden;
+        
+    }
+   
+    100%{
+         visibility:hidden;
+        
+    }
+   
+
+}
+@keyframes slide3{
+    0%{
+        visibility:hidden;
+        
+    }
+    25%{
+         visibility:hidden;
+       
+     }    
+       
+    50%{
+         visibility:hidden;
+        
+    }
+    75%{
+         visibility:visible;
+       
+    }
+    
+    100%{
+         visibility:hidden;
+        
+    }
+   
+
+}
+
+@keyframes slide4{
+    0%{
+        visibility:hidden;
+        
+    }
+    25%{
+         visibility:hidden;
+       
+     }    
+       
+    50%{
+         visibility:hidden;
+       
+    }
+    75%{
+         visibility:hidden;
+       
+    }
+    
+    100%{
+         visibility:visible;
+       
+    }
+   
+
+}
+#more{
+    display:none;
+}
+
+ 
+
+
+</style>
+    </head>
+    <body>
+    <div class='container'>
+    
+        <div class="topnav">
+            <a class="active" href="home.html">Home</a>
+            <a href="news.html">News</a>
+            <a href="contact.html">Contact</a>
+            <a href="about.html">About</a>
+            <a href="courses.html">Courses</a>
+            <a href="mail.html">Mail Us</a>
+            <a href="students.html">students</a>
+            <a href="teachers.html">staff</a>
+        </div>
+        <hr>
+            <div class="img-logo" style='margin-top:20px'>
+                <img src="real-logo.JPG" alt="" class="center" style='width:40px'>
+            </div>
+            <div class='text-center'>
+                <h1>GYEDU TECHNICAL INSTITUTE</h1>
+            </div>
+            <hr>
+            <section id="h">
+
+        <div id='right-one'>
+	    <div id='img-one'class="img-thumbnail" width="100%" height="100% float-left">
+        </div>
+    </div>
+
+  </section>
+  <hr>
+  <div class='row' style='margin-top:40px'>
+     
+    <div id="t" class=col-sm-4>
+    <span style='color:#000065'>OUR HISTORY</span>
+
+    <br>
+    <p  class="container p-3 my-3 bg-primary text-white">
+    The academy  is to establish  an institution that is a home and paragon of excellence for Ghanaian youth. Our primary assignment
+    of the academy is to nurture  8 to 18 years  old boys to achieve their dreams of becoming succesful footballers
+    
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum, nisi lorem egestas vitae scel<span id="dots">...</span><span id="more">erisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet. Nunc sagittis dictum nisi, sed ullamcorper ipsum dignissim ac. In at libero sed nunc venenatis imperdiet sed ornare turpis. Donec vitae dui eget tellus gravida venenatis. Integer fringilla congue eros non fermentum. Sed dapibus pulvinar nibh tempor porta.</span>
+    
+
+<button onclick="myFunction()" id="myBtn" style='width:120px; border-radius:6px;'>read more  </button>
+</p>
+    </div>
+<hr>
+
+ <div id="t" class=col-sm-4>
+<span style='color:#000065'>OUR VISION</span>
+
+<br>
+<p  class="container p-3 my-3 bg-dark  text-white">
+ The academy  is to establish  an institution that is a home and paragon of excellence for Ghanaian youth. Our primary assignment
+    of the academy is to nurture  8 to 18 years  old boys to achieve their dreams of becoming succesful footballers
+    
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum, nisi lorem egestas vitae scel<span id="dots">...</span><span id="more">erisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet. Nunc sagittis dictum nisi, sed ullamcorper ipsum dignissim ac. In at libero sed nunc venenatis imperdiet sed ornare turpis. Donec vitae dui eget tellus gravida venenatis. Integer fringilla congue eros non fermentum. Sed dapibus pulvinar nibh tempor porta.</span>
+    
+
+<button onclick="myFunction()" id="myBtn" style='width:120px; border-radius:6px;'>read more  </button>
+</p>
+</div>
+<hr>
+<div id="t" class=col-sm-4>
+<span style='color:#000065'>OUR MISSION</span>
+
+<br>
+<p  class="container p-3 my-3 bg-secondary text-white">
+ The academy  is to establish  an institution that is a home and paragon of excellence for Ghanaian youth. Our primary assignment
+    of the academy is to nurture  8 to 18 years  old boys to achieve their dreams of becoming succesful footballers
+    
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum, nisi lorem egestas vitae scel<span id="dots">...</span><span id="more">erisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet. Nunc sagittis dictum nisi, sed ullamcorper ipsum dignissim ac. In at libero sed nunc venenatis imperdiet sed ornare turpis. Donec vitae dui eget tellus gravida venenatis. Integer fringilla congue eros non fermentum. Sed dapibus pulvinar nibh tempor porta.</span>
+    
+
+<button onclick="myFunction()" id="myBtn" style='width:120px; border-radius:6px;'>read more  </button>
+</p>
+</div>
+
+</div>
+<hr>
+<div class='row' style='margin-top:20px'>
+     
+    <div id="t" class=col-sm-4>
+    <span style='color:#000065'>news</span>
+
+    <br>
+    <p  class="container p-3 my-3 bg-dark text-white">
+     The academy  is to establish  an institution that is a home and paragon of excellence for Ghanaian youth. Our primary assignment
+    of the academy is to nurture  8 to 18 years  old boys to achieve their dreams of becoming succesful footballers
+    
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum, nisi lorem egestas vitae scel<span id="dots">...</span><span id="more">erisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet. Nunc sagittis dictum nisi, sed ullamcorper ipsum dignissim ac. In at libero sed nunc venenatis imperdiet sed ornare turpis. Donec vitae dui eget tellus gravida venenatis. Integer fringilla congue eros non fermentum. Sed dapibus pulvinar nibh tempor porta.</span>
+    
+
+<button onclick="myFunction()" id="myBtn" style='width:120px; border-radius:6px;'>read more </button>
+    </p>
+    </div>
+
+
+ <div id="t" class=col-sm-4>
+<span style='color:#000065'>events</span>
+
+<br>
+<p  class="container p-3 my-3 bg-primary  text-white">
+ The academy  is to establish  an institution that is a home and paragon of excellence for Ghanaian youth. Our primary assignment
+    of the academy is to nurture  8 to 18 years  old boys to achieve their dreams of becoming succesful footballers
+    
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum, nisi lorem egestas vitae scel<span id="dots">...</span><span id="more">erisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet. Nunc sagittis dictum nisi, sed ullamcorper ipsum dignissim ac. In at libero sed nunc venenatis imperdiet sed ornare turpis. Donec vitae dui eget tellus gravida venenatis. Integer fringilla congue eros non fermentum. Sed dapibus pulvinar nibh tempor porta.</span>
+    
+
+<button onclick="myFunction()" id="myBtn" style='width:120px; border-radius:6px;'>read more  </button>
+</p>
+</div>
+
+
+</div>
+<hr>
+
+    
+    <div style='margin-top:540px;'>
+        
+        <h1 class='text-center'>Our Courses</h1>
+    <div class='row' >
+    
+    
+    <div class= 'col'>
+       <p>
+       
+    We offer 
+    </p>
+    <p><a href="electricals.html">Electricals Engineering Technology</a></p> 
+    </div>
+       <div class="col">
+            We offer 
+    </p>
+    <p><a href="building-construction.html">Building and construction Technology</a></p> 
+       </div> 
+        <div class="col">
+            We offer 
+    </p>
+    <p><a href="catrering.html">Welding and fabrication Technology</a></p> 
+       </div>
+       <div class="col">
+            We offer 
+    </p>
+    <p><a href="plumbing.html">Plumbing and Gas fitting Technology</a></p> 
+       </div>
+       <div class="col">
+            We offer 
+    </p>
+    <p><a href="fashion.html">Fashing  Design  Technology</a></p> 
+       </div>
+       <div class="col">
+            We offer 
+    </p>
+    <p><a href="wood.html.html">Wood Construction Technology</a></p> 
+       </div>
+       <div class="col">
+            We offer 
+    </p>
+    <p><a href="catrering.html">Hospitality and Catering Technology</a></p> 
+       </div>
+    </div>
+    </div>
+    <hr>
+    <div class='row'>
+         
+    <div class="w3-content w3-section" style="max-width:500px">
+  <p>What students enjoy doing</p>
+
+  <img class="mySlides w3-animate-fading" src="img1.jpg" style="width:100%">
+  <img class="mySlides w3-animate-fading" src="welding (3).jpg" style="width:100%">
+  <img class="mySlides w3-animate-fading" src="cattering (1).jpg" style="width:100%; height:60%">
+  <img class="mySlides w3-animate-fading" src="FASH.jpg" style="width:100%">
+</div>
+
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}    
+  x[myIndex-1].style.display = "block";  
+  setTimeout(carousel, 9000);    
+}
+</script>
+    <div class='container p-1 my-3 bg-primary text-white col-sm-4'>
+    <img class="center" src="kumi.jpg" alt="" style='width=100%;height=100%; border-radius:50%; '> 
+    <h5>About students and projects</h5>
+    <hr style='background:orange'>
+    <div class="w3-panel w3-leftbar w3-light-grey">
+  <p class="w3-xlarge w3-serif">
+  <i>"Our students enjoy hands on projects and love to involve themselves prospective live projects."</i></p>
+  <p> instructor kumi </p>
+</div>
+        <p>
+        this is a what the students enjoy doing
+        </p>
+    </div>
+   </div>
+    <br>
+    <hr>
+    <h1 class='text-center' style='color:red'>Our Affiliate</h1>
+    <div class=' d-flex' >
+                <div>
+                <img  class='right mt-20 ml-40' src="ctvet.jpg" alt=""  style='width:50%;height:50%'></div>
+                <a href="https://ctvet.gov.gh/">read from this site</a>
+    </div>
+
+        <div>
+           <img src="MOE-logo.png" alt="" style='width=20%;height=20%'> 
+            <a href="https://moe.gov.gh/">read from this site</a>
+        </div>
+        
+        <div><img  class='right mt-20 ml-40' src="logo-with-name.png" alt=""  style='width:50%;height:50%'></div>
+        <a href="https://ctvet.gov.gh/">read from this site</a>
+    </div>
+
+<div class="img-thumbnail" width="100%" height="100% float-left">
+    
+
+        <div class='round-img'>
+
+   
+        <div class='round-one'>
+           <img  src="weld (1).jpg" alt=""class="img-thumbnail" width="100%" height="100% float-left"> 
+        </div>
+         <div class='round-two'>
+            <img src="caddet.jpg" alt=""class="img-thumbnail" width="100%" height="100% float-left">
+        </div>
+         <div class='round-three'>
+            <img src="fash-img1 (6).jpg" alt="" class="img-thumbnail" width="100%" height="100% float-left">
+        </div>
+         <div class='round-four'>
+            <img src="weld (10).jpg" alt="" class="img-thumbnail" width="100%" height="100% float-left">
+           
+        </div>
+       </div>
+
+
+    </div>
+    <hr>
+    <br>
+<footer class="row" style='width:100%;  border-radius:15px; background:#eee; margin-top:1720px' >
+<div class='col-sm-4'>
+	<p style='margin-left:40px; margin-top:20px'>Quick link</p>
+	<ul style='list-style:none' class='text-left'>
+		<li><i class='fa fa-home' style='margin-left:15px;list-style:none'></i><a href="home.html"  style='margin-left:15px; text-decoration:none'>Home</a></li>
+		<li><i class='fa fa-mobile' style='margin-left:15px'></i><a href="contact.html"  style='margin-left:15px; text-decoration:none'>Contact</a></li>
+		<li><i class='fa fa-phone' style='margin-left:15px'></i><a href="about.html"  style='margin-left:15px; text-decoration:none'>About Us</a></li>
+		<li><i class='fa fa-envelope' style='margin-left:15px'></i><a href="mail.html"  style='margin-left:15px; text-decoration:none'>mail</a></li>
+		
+	</ul>
+</div>
+<div class="col-sm-4" style='margin-top:20px'>
+
+<p class='text-center'>Address</p>
+	<p class='text-center'>Location:Suhum-Nankese, Agyeikrom</p>
+	<p class='text-center'>Eastern-Region-Ghana</p>
+	<p class='text-center'>contact:0208337919/554397963</p>
+</div>
+<div class="col-sm-4"style='color:navy;list-style:none;margin-top:20px'>
+<ul class='nav'>
+	<a href="https://www.facebook.com/profile.php?id=100093966854945&mibextid=ZbWKwL" ><li class='nav-item'><i class='fa fa-facebook' style='list-style:none; margin-left:10px;margin-right:10px'></i></a></li>
+	<a href=""><li class='nav-item'><i class='fa fa-twitter' style='list-style:none;margin-right:10px'></i></li></a>
+	<a href=""><li class='nav-item'><i class='fa fa-instagram' style='list-style:none;margin-right:10px'></i></li></a>
+	<a href=""><li class='nav-item'><i class='fa fa-envelope' style='list-style:none;margin-right:10px'></i></li></a>
+</ul>
+</div>
+
+</footer >
+<div class="text-center"> 
+	copy-right-2023 Design by Zion@soft
+</div>
+    </div>
+    </body>
+</html>
