@@ -5,6 +5,12 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link href="css/style.css" rel="stylesheet">
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+        <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.4/dist/jquery.slim.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
         
         <style>
         body{
@@ -16,23 +22,24 @@
         }
 
         .container{
-            margin:20px auto;
+        
         }
-        .header{
+        #header{
             width:100%;
             height:80px;
             background:#000065;
         }
        
-        .header h1{
+        #header h1{
+        
             margin:10px auto;
             color:#fff;
              text-align:center;
              font-size:32px;
              font-family: sans-serif;
         }
-        .logo{
-            display:flex;
+        #logo{
+            display:block;
             justify-content:space-between;
              width:100%;
             height:30%;
@@ -40,9 +47,9 @@
             box-shadow:2px 3px 5px rgb(159,158,158,158);
             margin:0 auto;
         }
-        .logo img{
+        #logo img{
             width:30%;
-            margin-left: 320px;
+            margin:auto;
         }
         .logo p{
             font-size: 32px;
@@ -205,46 +212,51 @@ span{
 
         </style>
     </head>
-    <body id='container'>
-    <div class='header'>
-        <h1><span>WELCOME</span> TO GYEDU TECHNICAL <span>INSTITUTE</span></h1>
+    <body class='container'>
+    <div class=' container  p-3 my-3 ' >
+        <h1 class='text-center'><span>WELCOME</span> TO GYEDU TECHNICAL <span>INSTITUTE</span></h1>
                 
             </div>
-            <div class='logo'>
-                <img src="LOGO_G.png" alt="">
+            <br>
+            <div class=' col-sm-7 mt-20 w-10  p-3 my-3 ' id='logo'>
+                <img src="LOGO_G.png" class='mx-auto d-block ' alt="">
                 <div class='edge'>
-                <p> Making You Employable </p>  
+                <p class='text-center mt-20'> Making You Employable </p>  
                 </div>
+                 <div class='outer-line mb-0'> </div> 
             </div>
-            <div class='outer-line'> </div>    
-    </div>
+              
   
+        <hr>
     <div class='history'>
-        <h1>OUR PROGRAMS</h1>
+        <h1 class='text-center'>OUR PROGRAMS</h1>
     
         <p>We have special programs at the school for students. We run most of the Technical courses considered as electives together with the core subjects such as Maths , Science, English,Entrepreneur, I.C.T and Social studies  </p>
-        <p>students can generally access their result form this platform by accessing the button below</p>   
+        <p>These courses are design to equip students with knowledge and prepare them for their future careers. We recommend students to apply for their prospective second circle technical education course which will enhance to be dependent  and  self reliance in their job prospect</p>
+
         </div>
-        <div class='history-btn'> </div>
-        <div class='students-information'>
-            <p>THE ADMINISTRATION</p>
-            <hr>
-            <p>THE PRINCIPAL</p>
-            <hr style='width:80%; height: .1px; color:navy'>
-             <p>THE ASSISTANT HEADMASTER ACADEMICS</p>
-            <hr style='width:80%; height: .1px; color:red'>
-             <p>THE ASSISTANT HEAD ADMINISTRATION</p>
-           <hr style='width:80%; height: .1px; color:navy'>
-             <p>THE ACCOUNTANT</p>
-            <hr style='width:80%; height: .1px; color:red'>
-            <div class='students-portal'>
-            <select >
-             <option value="0">select</option>
-               <option value=""> <a href="students.html">students</a> </option>
-                <option value=""><a href="teachers.html">staff</a></option> 
-            </select>
-            <a href="mail.html">Login</a>
-                
+        <hr>
+        <div class='container w-520'> </div>
+        <h1 class='text-center'>OUR FACILITIES</h1>
+
+        <div>
+        <p>The hostel Block</p>
+            <img src="BLOCK2.jpg" class="w3-content w3-section " style="max-width:100%;" alt="our hostel">
+        </div>
+        <hr>
+        <div>
+        <p>The Administration Block</p>
+            <img src="image2.jpg" class="w3-content w3-section " style="max-width:100%;" alt="our hostel">
+        </div>
+        <hr>
+        <div>
+        <p>The I.C.T Lab</p>
+            <img src="1mg4.jpg" class="w3-content w3-section " style="max-width:100%;" alt="our hostel">
+        </div>
+        <hr>
+        <div>
+        <p>The departmental block 1</p>
+            <img src="image3.jpg" class="w3-content w3-section " style="max-width:100%;" alt="our hostel">
         </div>
     </div>
         
@@ -277,42 +289,44 @@ span{
     <input type="submit" name="go back home" value="home>>" >
     </a>
     <p style='margin-top:50%;margin-left:50%'>You can visit Us <a href='https://sites.google.com/view/gyedutechnicalinstitute/home'>here</a></p>
-    <footer>
-    <div class="ending">
-            <div class='media'>
-                
-           
-            <div class='facebook'>
-             <img src="icon-facebook.svg" alt="">
-             </div>
-             <div class='twitter'>
-             <img src="icon-twitter.svg" alt="">
-             </div>
-             <div class ='instagram'>
-             <img src="icon-instagram.svg" alt="">
-             
-             </div>
-              </div>
-              <div class='quick-link'>
-              <h3>quick link</h3>
-              <ul>
-                <li><a href="home.html">Home</a></li>
-                <li><a href="courses.html">courses</a></li>
-                 <li><a href="contact.html">Contact</a></li>
-                  <li><a href="mail.html">Email:www.gti.edu.gh <br> gti@gmail.com</a></li>
-                   <li><a href="about.html">About Us</a></li>
-                    <li><a href="events.html">News & Events</a></li>
+    
+    
+    </form>
+    <footer class="row text" style='width:100%;  border-radius:15px; background:#333; margin-top:1720px' >
+<div class='col-sm-4'>
+	<p style='margin-left:40px; margin-top:20px' class='text-white'>Quick link</p>
+	<ul style='list-style:none' class='text-left'>
+		<li><i class='fa fa-home text-white' style='margin-left:15px;list-style:none'></i><a href="home.html" class='text-white'  style='margin-left:15px; text-decoration:none'>Home</a></li>
+		<li><i class='fa fa-mobile text-white' style='margin-left:15px'></i><a href="contact.html" class='text-white'  style='margin-left:15px; text-decoration:none'>Contact</a></li>
+		<li><i class='fa fa-phone text-white' style='margin-left:15px'></i><a href="about.html" class='text-white'  style='margin-left:15px; text-decoration:none'>About Us</a></li>
+		<li><i class='fa fa-envelope text-white' style='margin-left:15px'></i><a href="mail.html"class='text-white'  style='margin-left:15px; text-decoration:none'>mail</a></li>
+		
+	</ul>
+</div>
+<div class="col-sm-4" style='margin-top:20px'>
 
-              </ul>
-                
-              </div>
-             <div class='info'>
-             <p>Gyedu Technical Institute</p>
-             <p>P.O. Box 28</p>
-             <p>Gyedu, Asutifi North- Ahafo Region</p>
-             <p>Tel:+233</p>
-             </div>
-        </div>
+<p class='text-center text-white'>Address</p>
+    	<p class='text-center text-white'>Gyedu Technical Institute</p>
+    	<p class='text-center text-white'>P.O.Box 28</p>
+
+	<p class='text-center text-white'>Location:Gyedu, Asutifi South</p>
+	<p class='text-center text-white'>Ahafo-Region-Ghana</p>
+	<p class='text-center text-white'>contact:0243618800</p>
+</div>
+<div class="col-sm-4"style='color:navy;list-style:none;margin-top:20px'>
+<ul class='nav'>
+	<a href="" ><li class='nav-item'><i class='fa fa-facebook' style='list-style:none; margin-left:10px;margin-right:10px'></i></a></li>
+	<a href=""><li class='nav-item'><i class='fa fa-twitter' style='list-style:none;margin-right:10px'></i></li></a>
+	<a href=""><li class='nav-item'><i class='fa fa-instagram' style='list-style:none;margin-right:10px'></i></li></a>
+	<a href=""><li class='nav-item'><i class='fa fa-envelope' style='list-style:none;margin-right:10px'></i></li></a>
+</ul>
+</div>
+
+</footer >
+<div class="text-center"> 
+	copy-right-2023 Design by Zion@soft
+</div>
+    </div>
 </footer>
     </body>
 </html>

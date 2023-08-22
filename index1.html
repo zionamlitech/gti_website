@@ -358,16 +358,39 @@ border-radius:2%;
             </div>
             <div class='text-center'>
                 <h1>GYEDU TECHNICAL INSTITUTE</h1>
+                <p style='font-family:arial;color:#000065'>Making you Employable</p>
             </div>
             <hr>
-            <section id="h">
+           
 
-        <div id='right-one'>
-	    <div id='img-one'class="img-thumbnail" width="100%" height="100% float-left">
+        <div  class="w3-content w3-section " style="max-width:100%;" >
+        <img class="Slide w3-animate-fading" src="image2.jpg" style="width:100%">
+  <img class="Slide w3-animate-fading" src="front.jpg" style="width:100%">
+  <img class="Slide w3-animate-fading" src="BLOCK2.jpg" style="width:100%; height:60%">
+  <img class="Slide w3-animate-fading" src="image2.jpg" style="width:100%">
+</div>
+
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("Slide");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}    
+  x[myIndex-1].style.display = "block";  
+  setTimeout(carousel, 9000);    
+}
+</script>
+	   <!-- <div id='img-one'class="img-thumbnail" width="100%" height="100% float-left">
         </div>
-    </div>
+    </div>-->
 
-  </section>
+
   <hr>
   <div class='row' style='margin-top:40px'>
      
@@ -376,9 +399,7 @@ border-radius:2%;
 
     <br>
     <p  class="container p-3 my-3 bg-primary text-white">
-    The academy  is to establish  an institution that is a home and paragon of excellence for Ghanaian youth. Our primary assignment
-    of the academy is to nurture  8 to 18 years  old boys to achieve their dreams of becoming succesful footballers
-    
+    Gyedu Technical Institute was Initiated by the Chief of Gyedu, which primary goal was to impact skills oriented program for the community  and youth. His decision was to give his people technical know how for self employment and development.
     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum, nisi lorem egestas vitae scel<span id="dots">...</span><span id="more">erisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet. Nunc sagittis dictum nisi, sed ullamcorper ipsum dignissim ac. In at libero sed nunc venenatis imperdiet sed ornare turpis. Donec vitae dui eget tellus gravida venenatis. Integer fringilla congue eros non fermentum. Sed dapibus pulvinar nibh tempor porta.</span>
     
 
@@ -392,8 +413,7 @@ border-radius:2%;
 
 <br>
 <p  class="container p-3 my-3 bg-dark  text-white">
- The academy  is to establish  an institution that is a home and paragon of excellence for Ghanaian youth. Our primary assignment
-    of the academy is to nurture  8 to 18 years  old boys to achieve their dreams of becoming succesful footballers
+ The vission of Gyedu Technical Institute is to train and develop skills oriented programs to the youth to be self reliance and indepent. We want to train and educate the handy men and women for tomorrow.
     
     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum, nisi lorem egestas vitae scel<span id="dots">...</span><span id="more">erisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet. Nunc sagittis dictum nisi, sed ullamcorper ipsum dignissim ac. In at libero sed nunc venenatis imperdiet sed ornare turpis. Donec vitae dui eget tellus gravida venenatis. Integer fringilla congue eros non fermentum. Sed dapibus pulvinar nibh tempor porta.</span>
     
@@ -407,9 +427,7 @@ border-radius:2%;
 
 <br>
 <p  class="container p-3 my-3 bg-secondary text-white">
- The academy  is to establish  an institution that is a home and paragon of excellence for Ghanaian youth. Our primary assignment
-    of the academy is to nurture  8 to 18 years  old boys to achieve their dreams of becoming succesful footballers
-    
+Making every student employable. Our focus is to train with technical knowledge    
     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum, nisi lorem egestas vitae scel<span id="dots">...</span><span id="more">erisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet. Nunc sagittis dictum nisi, sed ullamcorper ipsum dignissim ac. In at libero sed nunc venenatis imperdiet sed ornare turpis. Donec vitae dui eget tellus gravida venenatis. Integer fringilla congue eros non fermentum. Sed dapibus pulvinar nibh tempor porta.</span>
     
 
@@ -442,6 +460,8 @@ border-radius:2%;
 
 <br>
 <p  class="container p-3 my-3 bg-primary  text-white">
+ 
+   
  The academy  is to establish  an institution that is a home and paragon of excellence for Ghanaian youth. Our primary assignment
     of the academy is to nurture  8 to 18 years  old boys to achieve their dreams of becoming succesful footballers
     
@@ -454,10 +474,12 @@ border-radius:2%;
 
 
 </div>
+
+
 <hr>
 
     
-    <div style='margin-top:540px;'>
+    <div style='margin-top:140px;'>
         
         <h1 class='text-center'>Our Courses</h1>
     <div class='row' >
@@ -478,7 +500,7 @@ border-radius:2%;
         <div class="col">
             We offer 
     </p>
-    <p><a href="catrering.html">Welding and fabrication Technology</a></p> 
+    <p><a href="welding.html">Welding and fabrication Technology</a></p> 
        </div>
        <div class="col">
             We offer 
@@ -493,7 +515,7 @@ border-radius:2%;
        <div class="col">
             We offer 
     </p>
-    <p><a href="wood.html.html">Wood Construction Technology</a></p> 
+    <p><a href="wood.html">Wood Construction Technology</a></p> 
        </div>
        <div class="col">
             We offer 
@@ -502,16 +524,89 @@ border-radius:2%;
        </div>
     </div>
     </div>
+    <div class='container'>
+        <p class='text-center'>Meet our Administrators</p>
+        <div>
+            <p>principal</p>
+        </div>
+        <div>
+            <p>Assistant Head of academics</p>
+        </div>
+        <div>
+            <p>Assistant Head of Administration</p>
+        </div>
+        <div>
+            <p>The Accountant</p>
+        </div>
+        <div>
+            <p>The store Keeper</p>
+        </div>
+    </div>
     <hr>
+    <fieldset >
+    <h3  class='text-center'>Submit Application form</h3>
+        <form class=' row col-sm-4 center text-white' style='width:480px; height:180px; background:#000065; border-radius:8px;'>
+        
+            <label for="name" style='margin-top:20px;'>Enter Name:<input type="name" name="" value="" placeholder='name'  style='border-bottom-style: solid ;margin-left:20px;border-radius:8px;'></label>
+            <label for="email">Enter Email:<input  style='margin-top:20px;margin-left:20px; border-bottom:20px;border-radius:8px;' type="text" name="" value="" placeholder='email'></label>
+            <a href='mailto:gyedutechnical@gmail.com? subject:register with us enquiries' class='btn btn-primary'type="submit" value='submit'>submit</a>
+        </form>
+    </fieldset>
+    <hr>
+
     <div class='row'>
          
-    <div class="w3-content w3-section" style="max-width:500px">
-  <p>What students enjoy doing</p>
+        <div class="w3-content w3-section" style="max-width:500px">
+    <p>What students enjoy doing</p>
 
-  <img class="mySlides w3-animate-fading" src="img1.jpg" style="width:100%">
-  <img class="mySlides w3-animate-fading" src="welding (3).jpg" style="width:100%">
-  <img class="mySlides w3-animate-fading" src="cattering (1).jpg" style="width:100%; height:60%">
-  <img class="mySlides w3-animate-fading" src="FASH.jpg" style="width:100%">
+    <img class="mySlides w3-animate-fading" src="img1.jpg" style="width:100%">
+    <img class="mySlides w3-animate-fading" src="welding (3).jpg" style="width:100%">
+    <img class="mySlides w3-animate-fading" src="BC.jpg" style="width:100%; height:60%">
+    <img class="mySlides w3-animate-fading" src="FASH.jpg" style="width:100%">
+    </div>
+
+    <script>
+    var myIndex = 0;
+    carousel();
+
+    function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none";  
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}    
+    x[myIndex-1].style.display = "block";  
+    setTimeout(carousel, 9000);    
+    }
+    </script>
+        <div class='container p-1 my-3 bg-primary text-white col-sm-4'>
+        <img class="center" src="kumi.jpg" alt="" style='width=100%;height=100%; border-radius:50%; '> 
+        <h5>About students and projects</h5>
+        <hr style='background:orange'>
+        <div class="w3-panel w3-leftbar w3-light-grey">
+    <p class="w3-xlarge w3-serif">
+    <i>"Our students enjoy hands on projects and love to involve themselves prospective live projects."</i></p>
+    <p> instructor kumi </p>
+</div>
+        <p>
+        this is a what the students enjoy doing
+        </p>
+    </div>
+   </div>
+   <hr>
+    <br>
+    <div class='row'>
+        
+   
+    <div class="w3-content w3-section" style="max-width:500px">
+  <p>Students and Sports</p>
+
+  <img class="Slides w3-animate-fading" src="sports (1).jpg" style="width:100%">
+  <img class="Slides w3-animate-fading" src="men.jpg" style="width:100%">
+  <img class="Slides w3-animate-fading" src="sports (2).jpg" style="width:100%; height:60%">
+  <img class="Slides w3-animate-fading" src="sports (3).jpg" style="width:100%">
 </div>
 
 <script>
@@ -520,7 +615,7 @@ carousel();
 
 function carousel() {
   var i;
-  var x = document.getElementsByClassName("mySlides");
+  var x = document.getElementsByClassName("Slides");
   for (i = 0; i < x.length; i++) {
     x[i].style.display = "none";  
   }
@@ -530,40 +625,55 @@ function carousel() {
   setTimeout(carousel, 9000);    
 }
 </script>
-    <div class='container p-1 my-3 bg-primary text-white col-sm-4'>
-    <img class="center" src="kumi.jpg" alt="" style='width=100%;height=100%; border-radius:50%; '> 
-    <h5>About students and projects</h5>
-    <hr style='background:orange'>
-    <div class="w3-panel w3-leftbar w3-light-grey">
-  <p class="w3-xlarge w3-serif">
-  <i>"Our students enjoy hands on projects and love to involve themselves prospective live projects."</i></p>
-  <p> instructor kumi </p>
+<div class="col-sm-4 ml-20px mt-40px" style='max-width:500px; margin-left:60px; ' >
+    <p>
+    The men  and women sporting team participated in a VOTESSA games held at bechem secondary school and we won the men athlete for the competion with a gold medal .
+
+    </p>
+    <p>
+    The women sports team also received bronze medal for been placed second in the tournament
+    </p>
 </div>
-        <p>
-        this is a what the students enjoy doing
-        </p>
-    </div>
-   </div>
-    <br>
+</div>
     <hr>
-    <h1 class='text-center' style='color:red'>Our Affiliate</h1>
-    <div class=' d-flex' >
-                <div>
-                <img  class='right mt-20 ml-40' src="ctvet.jpg" alt=""  style='width:50%;height:50%'></div>
-                <a href="https://ctvet.gov.gh/">read from this site</a>
-    </div>
-
-        <div>
-           <img src="MOE-logo.png" alt="" style='width=20%;height=20%'> 
-            <a href="https://moe.gov.gh/">read from this site</a>
-        </div>
+    <fieldset>
         
-        <div><img  class='right mt-20 ml-40' src="logo-with-name.png" alt=""  style='width:50%;height:50%'></div>
-        <a href="https://ctvet.gov.gh/">read from this site</a>
-    </div>
-
-<div class="img-thumbnail" width="100%" height="100% float-left">
     
+        <h1 class='text-center' style='color:red'>Our Affiliate</h1>
+        <div class='row'>
+                    <div>
+                    <a href="https://ctvet.gov.gh/"><img  src="ctvet.jpg" alt=" read from this site"  style='width:80%;height:80%'></a>
+                    </div>
+                
+        
+
+            <div>
+            <a href="https://moe.gov.gh/"><img src="MOE-logo.png" alt="read from this site" style='width=20%;height=20%'> </a>
+                
+            </div>
+           <!-- 
+            <div>
+            <a href="https://ctvet.gov.gh/"><img   src="logo-with-name.png" alt="read from this site"  style='width:30%;height:30%'></a>
+            </div>
+            -->
+        
+        </div>
+ </fieldset>
+ <hr>
+ <div class='col'>
+        <h3>students and entertainement</h3>
+        <p>inaugauration of newly appointed prefects</p>
+
+        <div  class="img-thumbnail" width="100%" height="100% ">
+        <video  src='prefects.mp4' width="100%" height="250px" controls>
+            
+        </video>
+            
+        </div>
+ <br>
+ <hr>
+<div class="img-thumbnail" width="100%" height="100% float-left">
+   
 
         <div class='round-img'>
 
@@ -587,6 +697,9 @@ function carousel() {
     </div>
     <hr>
     <br>
+
+    
+    </div>
 <footer class="row" style='width:100%;  border-radius:15px; background:#eee; margin-top:1720px' >
 <div class='col-sm-4'>
 	<p style='margin-left:40px; margin-top:20px'>Quick link</p>
@@ -601,13 +714,16 @@ function carousel() {
 <div class="col-sm-4" style='margin-top:20px'>
 
 <p class='text-center'>Address</p>
-	<p class='text-center'>Location:Suhum-Nankese, Agyeikrom</p>
-	<p class='text-center'>Eastern-Region-Ghana</p>
-	<p class='text-center'>contact:0208337919/554397963</p>
+    	<p class='text-center'>Gyedu Technical Institute</p>
+    	<p class='text-center'>P.O.Box 28</p>
+
+	<p class='text-center'>Location:Gyedu, Asutifi South</p>
+	<p class='text-center'>Ahafo-Region-Ghana</p>
+	<p class='text-center'>contact:0243618800</p>
 </div>
 <div class="col-sm-4"style='color:navy;list-style:none;margin-top:20px'>
 <ul class='nav'>
-	<a href="https://www.facebook.com/profile.php?id=100093966854945&mibextid=ZbWKwL" ><li class='nav-item'><i class='fa fa-facebook' style='list-style:none; margin-left:10px;margin-right:10px'></i></a></li>
+	<a href="" ><li class='nav-item'><i class='fa fa-facebook' style='list-style:none; margin-left:10px;margin-right:10px'></i></a></li>
 	<a href=""><li class='nav-item'><i class='fa fa-twitter' style='list-style:none;margin-right:10px'></i></li></a>
 	<a href=""><li class='nav-item'><i class='fa fa-instagram' style='list-style:none;margin-right:10px'></i></li></a>
 	<a href=""><li class='nav-item'><i class='fa fa-envelope' style='list-style:none;margin-right:10px'></i></li></a>
