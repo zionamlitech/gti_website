@@ -1,0 +1,1208 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>first project</title>
+    <link rel="stylesheet" type="" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.4/dist/jquery.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+   <script>
+    function MyNabtex(){
+        document.getElementById('nabtex').innerHTML='The final NABTEX exams ends in the month of August  and registration start early next year';
+         
+    }
+    function MySchool(){
+       
+       document.getElementById('school').innerHTML='The school break is based on CTVET academic calender and it is tentative';
+        
+    }
+    function MyResume(){
+       
+       document.getElementById('resumes').innerHTML='school resumes on 17th September 2023';
+        
+    }
+    function MyPta(){
+       
+       document.getElementById('pta').innerHTML='The PTA is undertaking developmental project in the school. The project is under the construction of the building construction department';
+        
+    }
+    function Myteacher(){
+      
+      document.getElementById('teachers').innerHTML='Currently no workshop date is been confirmed';
+        
+    }
+    function MyExhibition(){
+        
+       document.getElementById('exhibition').innerHTML='We are going to witness students exhibition at the Fashion department this semester'; 
+    }
+   </script>
+    
+</head>
+<style>
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+   
+}
+body{
+    font-family: "epilogue",sans-serif,arial;
+    background-color:#Fff;
+    display: grid;
+     width: 1000px;
+     
+     text-decoration:none;
+     
+   
+    
+}
+a{
+     text-decoration:none;
+}
+
+
+main{
+       
+       width:1280px;
+        <!--background-image:linear-gradient(rgb(4,9,30,0.7),rgb(4,9,30,0.7)),url(BLOCK2.jpg);-->
+        background-repeat:no-repeat;
+         background-size:cover;
+         margin: 0 10px;
+        overflow:hidden;
+         text-decoration:none;
+        
+    }
+    h1 br{
+        display:none;
+    }
+    
+h1{
+    position:absolute;
+    left:50%;
+    top:20%;
+    color:#000;
+    font-size:30px;
+    
+    transform:translate(-50%,-50%);
+}
+h1:hover{
+    
+    color:red;
+}
+nav{
+
+   margin-top:10px;
+    text-align:center;
+    display:flex;
+    justify-content:space-between;
+    width:100%;
+    
+    background: #fff;
+    box-shadow: 5px solid #ccc rgb(0,0,0,0.6);
+    
+}
+
+nav.logo{
+    margin:10px auto;
+    position:right;
+}
+nav .logo img{
+    position:right;
+    margin-left:612px;
+}
+.nav-links{
+    position:absolute;
+    width:20%;
+    height:100%;
+    display:inline-block;
+    background:navy;
+    margin-left:-1px;
+   flex:1;
+   text-align:right; 
+   text-decoration:none;
+   margin-top: 10px;
+   left:0;
+   transition:all .5s ease;
+   opacity:1;
+   
+   
+   
+}
+#check{
+    display:none;
+    
+
+}
+
+#check:checked ~ .nav-links{
+    margin-left:-300px;
+   
+}
+label #bars{
+    position:absolute;
+    
+}
+label #cancel{
+    position:absolute;
+    cursor: pointer;
+    color:#fff;
+}
+ label #bars{
+     position:absolute;
+    cursor: pointer;
+    
+
+ }
+label #bars{
+    left:38px;
+     margin-top:35px;
+}
+label #cancel{
+    position:absolute;
+    margin-top:12px;
+    z-index:1;
+    left:225px;
+
+}
+.nav-links ul li a{
+     display:inline-block;
+    color:#fff;
+    font-size:20px;
+    font-weight:bold;
+    text-decoration:none;
+    font-style: 'Epilogue';
+    margin-top: 10px;
+    margin-left:-18px;
+    text-align:left;
+    padding-left:10px;
+    padding-top:10px;
+    line-height:10px;
+    box-sizing:border-box;
+    border-top:1px solid rgb(255,255, 255,.1);
+    border-bottom:2px solid navy;
+   
+   
+}
+.nav-links ul li  i{
+    margin-left:22px;
+    color:#fff;
+    width:50px;
+
+}
+.nav-links ul li{
+  
+   
+    justify-content:space-between;
+    text-decoration: none;
+    list-style:none;
+   text-align:left;
+
+     
+}
+.header{
+    width:30%;
+   
+    color:#fff;
+    margin:8px auto;
+
+}
+
+.nav-links ul li.first1,.second2,.third3{
+    margin-right:6px;
+}
+.nav-links ul li::after{
+    content:"";
+    width:100%;
+    height:2px;
+    background: blue;
+    display:block;
+    transition:0.5s;
+}
+.nav-links ul li:hover{
+    background: #666;
+}
+.nav-links ul li:hover::after{
+    background: red;
+
+}
+.wrapper{
+    position:absolute;
+    margin:20px auto;
+    width:78%;
+    left:15px;
+    height: 480px;
+    margin-left:20%;
+    margin-top:7%;
+   
+    border-radius:8px;
+    border:5px solid #fff;
+    box-shadow:2px 3px 5px rgb(159,158,158,158);
+    align-content:center;
+       transform:transition(-50%, -50%);
+    align-items:center;
+    opacity:1;
+   
+
+}
+
+
+.wrapper .img-one,.img-two,.img-three,.img-four{
+   position:absolute;
+   border-radius:70%;
+    width:100%;
+    height:90%;
+}
+
+.img-one{
+    animation: slide1 12s linear infinite;
+}
+.img-two{
+    animation: slide2 12s linear infinite;
+}
+.img-three{
+    animation: slide3 12s linear infinite;
+}
+.img-four{
+    animation: slide3 12s linear infinite;
+}
+
+@keyframes slide1{
+    0%{
+        visibility:visible;
+        
+    }
+    25%{
+         visibility:hidden;
+       
+     }    
+       
+    50%{
+         visibility:hidden;
+        
+    }
+    75%{
+         visibility:hidden;
+       
+    }
+    
+    100%{
+         visibility:visible;
+       
+    }
+   
+
+}
+@keyframes slide2{
+    0%{
+        visibility:hidden;
+        
+    }
+    25%{
+         visibility:hidden;
+      
+     }    
+        
+    50%{
+         visibility:visible;
+        
+    }
+    75%{
+         visibility:hidden;
+        
+    }
+   
+    100%{
+         visibility:hidden;
+        
+    }
+   
+
+}
+@keyframes slide3{
+    0%{
+        visibility:hidden;
+        
+    }
+    25%{
+         visibility:hidden;
+       
+     }    
+       
+    50%{
+         visibility:hidden;
+        
+    }
+    75%{
+         visibility:visible;
+       
+    }
+    
+    100%{
+         visibility:hidden;
+        
+    }
+   
+
+}
+
+@keyframes slide4{
+    0%{
+        visibility:hidden;
+        
+    }
+    25%{
+         visibility:hidden;
+       
+     }    
+       
+    50%{
+         visibility:hidden;
+       
+    }
+    75%{
+         visibility:hidden;
+       
+    }
+    
+    100%{
+         visibility:visible;
+       
+    }
+   
+
+}
+
+
+.head{
+    text-align:center;
+    top: 14%;
+
+}
+
+.head p {
+    
+    position:relative;
+    margin-top:50px;
+    margin-left:35%;
+    top:10%;
+    font-weight:bold;
+    color:black;
+    font-size:30px;
+    font-family:sans-serif;
+
+}
+.head h1 {
+    
+    position:relative;
+    margin-top:50px;
+    margin-left:2%;
+    top:10%;
+    font-weight:bold;
+    color:#000065;
+    font-size:30px;
+    font-family:sans-serif;
+
+}
+.head p:hover{
+    color: red;
+}
+h6{
+    font-size:20px;
+margin-left:25px;
+    color:#000065;
+}
+.miss-viss{
+    margin-left:15%;
+}
+.mission{
+    margin:50px auto;
+}
+.std{
+   
+      margin-top:3%;
+}
+
+.center{
+   
+    width:95%;
+    height:70px;
+    border-radius:20px;
+    align-items:center;
+    margin-top:25%;
+    margin-left:2%;
+    margin-bottom:1%;
+    
+    padding:20px;
+    text-align:center;
+    
+    
+
+    border:1px solid #fff;
+   
+    background:#f44336;
+    
+}
+.center a{
+    padding:0 2px;
+  
+    padding:2px 5px;
+    color:#fff;
+    text-decoration:none;
+    font-size:10px;
+    margin-left:-10px;
+    
+    font-family:arial;
+}
+.center:hover{
+background:#000;
+color: orange;
+
+}
+
+.center:hover a{
+   color: orange;
+   font-size:10px;
+   font-family:sans-serif; 
+}
+.button-first{
+    display:flex;
+    width:100%;
+    height: 300px;
+    background: #fff;
+    border:1px solid #fff;
+     box-shadow: 5px 5px 5px 5px rgb(0,0,0,0.6);
+    top:20%;
+   
+    margin-left:2%;
+}
+.General{
+    width:40%;
+    height:60%;
+    background:red;
+    margin-top:7%;
+    margin-left:6%;
+    box-shadow: 5px 5px 5px 5px rgb(0,0,0,0.6);
+    border-radius:50% 87%;
+    text-align:center;
+
+}
+.button-first span{
+    font-family:arial;
+    font-size: 50px;
+    font-weight: bold;
+    margin:10px auto;
+    color:navy;
+    
+    
+}
+.students{
+    width:100%;
+    height:30%;
+       
+ box-shadow:2px 3px 5px rgb(159,158,158,158);
+}
+.info-teach{
+    width:40%;
+    height:60%;
+    background:#fff;
+    margin-top:6%;
+    margin-left:6%;
+    border:1px solid #000065;
+    box-shadow:2px 3px 5px rgb(159,158,158,158);
+
+}
+.img-home span{
+    width:20%;
+    height:1%;
+    color: #000065:
+
+
+}
+.about{
+    width:100%;
+    height:100%;
+     border:1px solid;
+    box-shadow:2px 3px 5px rgb(159,158,158,158);
+    margin:1px auto;
+    background:#fff;
+   
+   
+    text-align:center;
+    
+    margin-top:0%;
+}
+
+.school{
+    width:100%;
+    height:32%;
+     border:1px solid #000065;
+    border-bottom:1px;
+    margin:0 auto;
+  
+   
+
+}
+.school a,.students a,.staff a{
+    top:60px;
+    color: #000;
+}
+
+.school:hover,.students:hover,.staff:hover{background:red;}
+.students{
+    width:100%;
+    height:32%;
+     border:1px solid #000065;
+   
+    margin:0 auto;
+  
+}
+.staff{
+    width:100%;
+    height:35%;
+    
+     margin: 0px auto;
+    
+   border:1px solid #000065;
+   
+
+}
+.students a:hover, .staff a:hover,.school a:hover{
+    color:navy;
+}
+.vission{
+
+}
+footer{
+   
+    width:1250px;
+    height:320px;
+    background:#000065;
+    border-radius:20px;
+    margin-top:650px;
+}
+.ending{
+    display:flex;
+}
+.media{
+    display:flex;
+    justify:content:space-between;
+    margin:20px 60px;
+    height:16px;
+}
+.facebook,.twitter,.instagram{
+    margin-left:15px;
+    color:#ccc;
+}
+.facebook:hover,.twitter:hover,.instagram:hover{
+    background:red;
+    width:20px;
+   
+}
+.info{
+    margin:20px auto;
+    width:230px;
+    height:100px;
+    text-align:center;
+
+}
+.info p{
+    color :#fff;
+    margin:5px auto;
+}
+.quick-link{
+    display:block;
+    width:40%;
+    height:30%;
+    margin-left:30%;
+    margin-top:20px;
+}
+.quick-link h3{
+    color:#fff;
+    font-style:'epilogue';
+    font-weight: bold;
+    font-size:20px;
+
+}
+.quick-link ul li{
+    list-style:none;
+}
+.quick-link a{
+    text-decoration:none;
+    color:#fff;
+    font-size:18px;
+    
+}
+.quick-link a:hover{
+    color:red;
+}
+
+
+.miss-viss{
+    display: block;
+    width:80%;
+}
+.vission{
+    width:40%;
+    height:20%;
+    border:1px solid #fff;
+
+}
+.vission span,.mission span{
+   width:30px;
+   height:2px;
+    color:red;
+}
+.vission h3,.mission  h3{
+    color:#000065;
+    margin:5px auto;
+}
+
+.mission{
+     width:40%;
+    height:20%;
+    margin-left:0%;
+    border:1px solid #fff;
+
+
+}
+.events{
+   display:flex;
+    width:70%;
+    height:20%;
+    background:#fff;
+    border:5px solid #fff;
+    box-shadow:2px 3px 5px rgb(159,158,158,158);
+    margin:5px auto;
+}
+.events h3{
+    color:navy;
+}
+.events-round{
+    width:60%;
+    height:90%;
+    background:red;
+     border-end-end-radius: 100%;
+}
+.first,.second,.third,.fourth,.fifth,.six{
+    width:60%;
+    height:10%;
+    background:#fff;
+     box-shadow:2px 3px 5px rgb(159,158,158,158);
+      border:5px solid #fff;
+      border-radius:20px;
+      margin:10px 2px auto;
+      text-align:center;
+
+}
+.events-round.first{
+    margin-top:20px;
+}
+.events a{
+    font-size:18px;
+    font-family:arial;
+}
+.first p,.second p,.third p,.fourth p,.fifth p,.six p{
+    color:#000065;
+    margin:10px auto;
+}
+.news{
+    width:70%;
+    height:20%;
+    background:#000065;
+    border:5px solid #fff;
+    box-shadow:2px 3px 5px rgb(159,158,158,158);
+    margin:5px auto;
+}
+.sub-news{
+    width:100%;
+    height:50%;
+    background:#fff;
+    border:5px solid #fff;
+    box-shadow:2px 3px 5px rgb(159,158,158,158);
+    margin:5px auto;
+    top:50%;
+    text-align:left;
+
+}
+.sub-news p{
+    font-size:18px;
+    font-family:arial;
+    color:#000065;
+}
+.sub-news li{
+    font-size:18px;
+    font-family:arial;
+    color:red;
+    margin-left:15px;
+}
+.news h3{
+    font-weight:bold;
+    font-size:32px;
+    color: red;
+}
+.round-img{
+    display:flex;
+  position:relative;
+     width:50%;
+    height:90%;
+    background:#000065;
+    border:5px solid #fff;
+    box-shadow:2px 3px 5px rgb(159,158,158,158);
+    margin:-495px 50;
+     transform:transition(-50%, -50%);
+   
+    text-align:right;
+    overflow:hidden;
+    align-content:center;
+
+}
+.round-img img{
+    position:absolute;
+
+}
+
+
+ .round-img.round-one,.round-img.round-two,.round-img.round-three,.round-img.round-four{
+   position:absolute;
+   
+    width:100%;
+    height:100%;
+}
+
+.round-one{
+    animation: slide1 12s linear infinite;
+}
+.round-two{
+    animation: slide2 12s linear infinite;
+}
+.round-three{
+    animation: slide3 12s linear infinite;
+}
+.round-four{
+    animation: slide3 12s linear infinite;
+}
+.prefect{
+  
+   width:100%;
+   height:60%;
+
+}
+.prefects.video{
+    
+    width:100%;
+    height:40%;
+}
+
+@keyframes slide1{
+    0%{
+        visibility:visible;
+        
+    }
+    25%{
+         visibility:hidden;
+       
+     }    
+       
+    50%{
+         visibility:hidden;
+        
+    }
+    75%{
+         visibility:hidden;
+       
+    }
+    
+    100%{
+         visibility:visible;
+       
+    }
+   
+
+}
+@keyframes slide2{
+    0%{
+        visibility:hidden;
+        
+    }
+    25%{
+         visibility:hidden;
+      
+     }    
+        
+    50%{
+         visibility:visible;
+        
+    }
+    75%{
+         visibility:hidden;
+        
+    }
+   
+    100%{
+         visibility:hidden;
+        
+    }
+   
+
+}
+@keyframes slide3{
+    0%{
+        visibility:hidden;
+        
+    }
+    25%{
+         visibility:hidden;
+       
+     }    
+       
+    50%{
+         visibility:hidden;
+        
+    }
+    75%{
+         visibility:visible;
+       
+    }
+    
+    100%{
+         visibility:hidden;
+        
+    }
+   
+
+}
+
+@keyframes slide4{
+    0%{
+        visibility:hidden;
+        
+    }
+    25%{
+         visibility:hidden;
+       
+     }    
+       
+    50%{
+         visibility:hidden;
+       
+    }
+    75%{
+         visibility:hidden;
+       
+    }
+    
+    100%{
+         visibility:visible;
+       
+    }
+   
+
+}
+
+
+@media screen and (max-width:375px){
+    body{
+        box-sizing:border-box;
+         width:100vh;
+        margin:0;
+        padding:0;
+       
+    
+
+    }
+    main{
+        width:100%;
+        height:100%;
+        margin:0;
+        padding:0;
+        background-image:linear-gradient(rgb(4,9,30,0.7),rgb(4,9,30,0.7)),url(image2.jpg);
+        background-repeat:no-repeat;
+        background-size:cover;
+    }
+    
+    nav{
+        background:#f44336;
+        width:50px;
+        height:600px;
+        z-index:2;
+        text-align:center;
+    }
+  .nav-links{
+   
+    display:block;
+    background:#f44336;
+    width:50px;
+    height:600px;
+    z-index:2;
+    text-align:center;
+   
+   
+    
+  }
+  .nav-links ul li{
+  
+    display:inline-block;
+    justify-content:space-between;
+    text-decoration: none;
+    list-style:none;
+    text-align:left;
+    left:0;
+     
+}
+.nav-links ul li a{
+   left:0;
+
+}
+ 
+}
+
+</style>
+
+    
+
+<body>
+<div class='container'>
+<!--<img class='big' src="img6.jpg" alt="">-->
+<nav>
+<div class=logo>
+   <img src="LOGO_G.png" alt="">
+</div>
+<input type="checkbox" id='check'>>
+<label for="check">
+     <i class="fa fa-bars" id='bars'></i>
+    <i class="fa fa-times" id='cancel' ></i>
+   
+   </label>
+<div class="nav-links">
+   
+
+    
+
+    <div class='header'>
+    <p>MyApps</p>
+</div>
+<hr>
+    <ul>
+        
+        <li class="fourth1"><i class='fa fa-qrcode'></i><a href="dashboard.html" >Dashboard</a> </li>
+        <li class="first1"><i class='fa fa-home'></i><a href="home.html" >Home</a> </li>
+        <li class='second2'><i class='fa fa-mortar-board'></i><a href="courses.html">Courses</a> </li>
+        <li class='third3'><i class='fa fa-phone'></i><a href="contact.html">Contact</a> </li>
+        <li class='fifth1'><i class='fa fa-envelope'></i><a href="mail.html">Email</a> </li>
+        <li class='six1'><i class='fa fa-envelope-open'></i><a href="contact.html">News & Events</a> </li>
+        <li class='seven'><i class='fa fa-envelope-open'></i><a href="admin.html">Administration</a> </li>
+        <li class='six1'><i class='fa fa-envelope-open'></i><a href="students.html">students & staff</a> </li>
+    </ul>
+
+    </div>
+   
+</nav>
+<div class='wrapper'>
+
+<div class='img-home'>
+   
+    <div class='img-one'>
+    <h3>THE CAMPUS BLOCK & ICT LAB</h3>
+    <span></span>
+    <img src="image2.jpg" alt="" width='100%' height='100%'>
+    </div>
+    <div class='img-two'>
+     <h3>THE ADMINISTRATION BLOCK</h3>
+    <span></span>
+    <img src="BLOCK.jpg" alt=""width='100%' height='100%'>
+    </div>
+     <div class='img-three'>
+     <img src="BLOCK2.jpg" alt="" width='100%' height='100%'>
+     </div>
+       <div class='img-four'> 
+        <h3>THE HOSTEL</h3>
+    <span></span>
+       <img src="front.jpg" alt="" width='100%' height='100%'>
+       </div>
+       
+</div>
+    
+
+
+    
+</div>
+
+
+
+<section class='head'>
+    <h6></h6>
+    <h1>GYEDU TECHNICAL/VOCATIONAL INSTITUTE</h1>
+    <p>Making You Employable</p>
+    <p>Home of skills learning center </p>
+    <div class="center">
+    <a href="contact .html">Visit Us To Know More</a>
+    <!--<img  class ='std'src="ele (3).jpg" alt=""> -->
+</div>
+<div>
+</section>
+
+<section class= 'button-first'>
+<div class='General'>
+    <span>GENERAL INFORMATION</span>
+    <div class='students1'>
+        
+    </div>
+    
+</div>
+<div class='info-teach'>
+        <div class='about'>
+        <h3 class='school'><a href=" about.html">About The school</a> </h3>
+       
+        <h3 class='students'> <a href="students.html">The students</a></h3>
+        
+        <h3 class='staff'><a href=" staff.html">The staff</a></h3>
+         
+        </div>
+</div>
+    
+</section>
+   
+<br>
+
+<fieldset class='miss-viss'>
+<div class ='vission'>
+     <h3 style='margin='10px auto''><span> OUR </span> VISION </h3>
+     
+     <p>The vission of Gyedu Technical Institute is to train and develop skills oriented programs to the youth to be self reliance and indepent.
+     We want to train and educate the handy men and women for tomorrow. 
+     </p>
+</div>
+    <hr>
+    <div class='mission'>
+   
+       <h3 margin='10px auto'> <span> OUR </span> MISSION </h3>
+       <p>Making every student employable. Our focus is to train with technical knowledge </p>
+    </div>
+
+</fieldset>
+
+<div class='events'>
+<h3 style='margin:20px auto, color:navy'>UPCOMING EVENTS</h3>
+<div class='events-round'>
+<div class='first'>
+    <p id='nabtex' onclick=MyNabtex()><a href="#nabtex">FINAL NABTEX EXAMINATION</a></p>
+</div>
+<div class='second'>
+   <p id='school'  onclick=MySchool()><a href="#school">SCHOOL BREAK</a> </p> 
+</div>
+<div class='third'>
+   <p id='resumes'  onclick=MyResume()><a href="#resumes">SCHOOL RESUMES</a></p> 
+</div>
+<div class='fourth'>
+   <p id='pta' onclick=MyPta()><a href="#pta">PTA & PROJECTS</a></p> 
+</div>
+<div  class='fifth'>
+   <p id='teachers'  onclick=Myteacher()><a href="teacher">TEACHERS WORKSHOP</a></p> 
+</div>
+<div class='six'>
+   <p id='exhibition'  onclick=MyExhibition()><a href="#exhibition">STUDENTS EXHIBITION</a></p> 
+</div>
+    
+</div>
+    <div class='round-img'>
+   
+        <div class='round-one'>
+           <img  src="weld (1).jpg" alt="" width='100%' height='100%'> 
+        </div>
+         <div class='round-two'>
+            <img src="caddet.jpg" alt="" width='100%' height='100%'>
+        </div>
+         <div class='round-three'>
+            <img src="fash-img1 (6).jpg" alt="" width='100%' height='100%'>
+        </div>
+         <div class='round-four'>
+            <img src="weld (10).jpg" alt="" width='100%' height='100%'>
+           
+        </div>
+       
+    </div>
+</div>
+<div class='news'>
+<h3>NEWS</h3>
+    <div class='sub-news'>
+    <p>Newly Appointed School Authorities</p>
+    <ol>
+       <li> Acting Assistant Headmaster Academics</li>
+       <li>Acting Head of Administration</li>
+    </ol>
+    <hr>
+        <p >Free <span>TVET</span>  feeding starts from the month of September, 2023 on the reopening  of school at Gyedu Technical Institute.
+All enrolled students are hereby inform to report to school as soon as possible on the 17th of September, 2023
+Academic Calender begins with general actvities.
+<hr>
+<div class='prefect'>
+<h6>NEWLY APPOINTED PREFECTS SWORN IN CEREMONY</h6>
+<p>The ceremony was perfected by our noble staffs. The prefects were custodially initiated. They were sworn in to accept the  mantle of prefectship</p>
+   
+</p>
+ <video autoplay muted loop src='prefects.mp4' width="100%" height="80%" controls>
+        
+    </video>
+
+
+    </div>
+   
+    <!--<hr background='red' margin-top='5%'>-->
+    
+</div>
+ <hr>
+</div>
+<form action="form.php" method="post">
+    
+        Name: <input type="text" name="name"><br>
+        E-mail: <input type="text" name="email"><br>
+        <input type="submit">
+
+<footer>
+    <div class="ending">
+            <div class='media'>
+                
+           
+            <div class='facebook'>
+             <i class='fa fa-facebook'></i>
+             
+             </div>
+             <div class='twitter'>
+             <i class='fa fa-twitter'></i>
+             </div>
+             <div class ='instagram'>
+             <i class='fa fa-instagram'></i>
+             
+             </div>
+              </div>
+               <div class='quick-link'>
+              <h3>quick link</h3>
+              <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="courses.html">courses</a></li>
+                 <li><a href="contact.html">Contact</a></li>
+                  <li><a href="mail.html">Email:www.gti.edu.gh <br> gti@gmail.com</a></li>
+                   <li><a href="about.html">About Us</a></li>
+                    <li><a href="events.html">News & Events</a></li>
+
+              </ul>
+                
+              </div>
+             <div class='info'>
+             <p>Gyedu Technical Institute</p>
+             <p>P.O. Box 28</p>
+             <p>Gyedu, Asutifi North- Ahafo Region</p>
+             <p>Tel:+233</p>
+             </div>
+        </div>
+</footer>
+
+</div>
+</body>
+</html>
