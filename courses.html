@@ -379,10 +379,47 @@ fieldset:last-of-type a{
 .tvet{
     top:70%;
 }
-@media screen and(max-width:375px){
+#first1{
+    margin: 10px auto;
+}
+@media screen and(max-width:768px){
     .container{
         width:80%;
     }
+}
+@media screen and (max-width:375px){
+    html,body{
+        background:#fff;
+        overflow-x:hidden;
+    }
+    .container{
+        width:80%;
+    }
+    #logo{
+        margin:20px auto;
+        
+    }
+    footer{
+        margin:auto;
+       margin-left:50px;
+        height:720px;
+        background:#000;
+        
+    }
+    footer p{
+        color:blue;
+    }
+    footer li a{
+        color:blue;
+        font-size:18px;
+
+    }
+    footer li a:hover{
+        color:red;
+        font-size:18px;
+
+    }
+    
 }
 
     </style>
@@ -391,12 +428,12 @@ fieldset:last-of-type a{
          
     <h1 class='text-center'>COURSES AVAILABLE IN THE SCHOOL</h1>
    
-       <img class='mx-auto d-flex ' src="real-logo.JPG" alt="" style='width:10%'> 
+       <img id='logo'class='mx-auto d-flex ' src="real-logo.JPG" alt="" style='width:10%'> 
  <div class='col-sm-4 bg-primary text-white'>
             <p class='text-center container p-3 my-3 bg-primary text-white'> Our programs are designed to train, develop and equip the handy workmanship. There is no pre-requisite skills needed to get enroll in one of out courses. It is flexible and easy to learn in a duration of 3 years with a certified certificate from Technical and Vocational Education and Training (TVET)</p>
 
  </div>
-    <div style='container-fluid' class='row' >
+    <div style='container-fluid' class='row'  >
         <div class='menu col' style='width:40% float:left'>
         <div class='menu-item'>
         <a href="electricals.html">ELECTRICAL ENGINEERING TECHNOLOGY</a>   
@@ -424,7 +461,7 @@ fieldset:last-of-type a{
     </div>
      <div>
 <div class="w3-content w3-section" style="max-width:500px">
-  <p>Students and Sports</p>
+  <p style='color:blue'>Students and Programs</p>
 
   <img class="Slides w3-animate-fading" src="ELEC.jpg" style="width:100%">
   <img class="Slides w3-animate-fading" src="cattering (2).jpg" style="width:100%; height:50%">
@@ -545,7 +582,7 @@ function carousel() {
         </div>
 </footer>-->
 <hr>
-<div class='row'>
+<div class='row'id='first1'>
         
    
     <div class="w3-content w3-section" style="max-width:500px">
@@ -589,7 +626,7 @@ function ca() {
 </div>
 </div>
     <hr>
-    <div class='row'>
+    <div class='row' id='first1'>
         
    
     <div class="w3-content w3-section" style="max-width:500px">
@@ -603,7 +640,7 @@ function ca() {
 </div>
 
 <script>
-var myIndex = 0;
+var my = 0;
 ca();
 
 function ca() {
@@ -612,9 +649,9 @@ function ca() {
   for (i = 0; i < x.length; i++) {
     x[i].style.display = "none";  
   }
-  myIndex++;
-  if (myIndex > x.length) {myIndex = 1}    
-  x[myIndex-1].style.display = "block";  
+  my++;
+  if (my> x.length) {my = 1}    
+  x[my-1].style.display = "block";  
   setTimeout(ca, 9000);    
 }
 </script>
@@ -627,6 +664,94 @@ function ca() {
     </p>
     <p>
     The aim of this course is to enhance students in the department to be artisans in construction field. 
+    </p>
+    <p>At the end of this course students students are given projects to accomplish as their practical test which is Assessed by their instructors </p>
+    <p></p>
+</div>
+</div>
+    <hr>
+     <div class='row'id='first1'>
+        
+   
+    <div class="w3-content w3-section" style="max-width:500px">
+    <h3 class='text-center'></h3>
+  <p style='green'>Welding fabrication technology</p>
+
+  <img class="img2t w3-animate-fading" src="weld (1).jpg" style="width:100%">
+  <img class="img2t w3-animate-fading" src="weld (2.jpg" style="width:100%">
+  <img class="img2t w3-animate-fading" src="weld (3).jpg" style="width:100%; height:60%">
+  <img class="img2t w3-animate-fading" src="weld (10).jpg" style="width:100%">
+</div>
+
+<script>
+var m = 0;
+da();
+
+function da() {
+  var i;
+  var x = document.getElementsByClassName("img2t");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  m++;
+  if (myIndex > x.length) {m = 1}    
+  x[m-1].style.display = "block";  
+  setTimeout(da, 9000);    
+}
+</script>
+<div class="col-sm-9 ml-20px mt-40px" style='max-width:500px; margin-left:60px; ' >
+    <p>
+    The Welding fabrication   Technology is  also a course designed to train students to join metals into shapes <strong>House gates, metallic window flames, electroplating and many more</strong> . Plates designs are our core  core mandate.  
+    </p>
+    <p>
+    This program is essentially design to motivate students to have a hands on practical knowledge which prepare students to graduate with the skills of joing and design metals plates at the end of their careers in the institution.
+    </p>
+    <p>
+    This programe  is aimed at  training students in the department to be artisonary welders in construction firm. 
+    </p>
+    <p>At the end of this course students students are given projects to accomplish as their practical test which is Assessed by their instructors </p>
+    <p></p>
+</div>
+</div>
+    <hr>
+     <div class='row'id='first1'>
+        
+   
+    <div class="w3-content w3-section" style="max-width:500px">
+    <h3 class='text-center'></h3>
+  <p style='green'>Electricals Installation technology</p>
+
+  <img class="imgt w3-animate-fading" src="ele (1).jpg" style="width:100%">
+  <img class="imgt w3-animate-fading" src="img1.jpg" style="width:100%">
+  <img class="imgt w3-animate-fading" src="img5.jpg" style="width:100%; height:60%">
+  <img class="imgt w3-animate-fading" src="ELEC.jpg" style="width:100%">
+</div>
+
+<script>
+var n = 0;
+da();
+
+function da() {
+  var i;
+  var x = document.getElementsByClassName("imgt");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  n++;
+  if (n > x.length) {n = 1}    
+  x[n-1].style.display = "block";  
+  setTimeout(da, 9000);    
+}
+</script>
+<div class="col-sm-9 ml-20px mt-40px" style='max-width:500px; margin-left:60px; ' >
+    <p>
+    Electricals Installation   Technology is  also a program designed to train students to install electricals components such as <strong>Household and industrial electricals installation, electronics testing and many more</strong> . Plates designs are our core  core mandate.  
+    </p>
+    <p>
+    This program is essentially design to motivate students to have a hands on practical knowledge which prepare students to graduate with the skills of industrial working skills and building and testing circuits, motor construction at the end of their careers in the institution.
+    </p>
+    <p>
+    This programe  is aimed at  training students in the department to be artisonary electricians in construction firm. 
     </p>
     <p>At the end of this course students students are given projects to accomplish as their practical test which is Assessed by their instructors </p>
     <p></p>
